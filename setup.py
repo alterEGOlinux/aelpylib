@@ -15,7 +15,7 @@ setup(name='aelpylib',
       author='Pascal Malouin (fantomH)',
       author_email='pascal.malouin@protonmail.com',
       url='#',
-      packages=['aelpylib.useless'],
+      packages=['aelpylib'],
      )
 
 # vim: syntax=python
