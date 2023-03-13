@@ -1,11 +1,13 @@
 #!/usr/bin/env python
+# -----------------------------------------------------------------------------
+#              { alterEGO Linux: "Open the vault of knowledge" }
+# -----------------------------------------------------------------------------
 #
-# setup.py
+# /python-ael/setup.py
 #   created        : 2022-09-05 17:36:12 UTC
-#   updated        : 2022-09-09 17:36:28 UTC
+#   updated        : 2023-03-13 00:15:41 UTC
 #   description    : Python libraries and wrappers for alterEGOlinux
-# ___________________________ { alterEGO Linux: "Open the vault of knowledge" }
-
+# _____________________________________________________________________________
 
 from distutils.core import setup
 
@@ -18,5 +20,7 @@ setup(name='ael',
       packages=['ael'],
      )
 
+# -----------------------------------------------------------------------------
+# vim: foldmethod=marker
 # vim: syntax=python
-# { FIN } __________________________________________________________ ¯\_(ツ)_/¯
+# ____________________________{ FIN ¯\_(ツ)_/¯ }_______________________________
