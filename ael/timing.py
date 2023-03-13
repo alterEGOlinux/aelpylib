@@ -4,7 +4,7 @@
 #
 # /ael/timing.py
 #   created        : 2023-03-13 00:08:39 UTC
-#   updated        : 2023-03-13 00:08:39 UTC
+#   updated        : 2023-03-13 11:36:22 UTC
 #   description    : Time related stuff
 # _____________________________________________________________________________
 
@@ -17,14 +17,7 @@ def time_of_execution(func):
         start = time.perf_counter()
         func(*args, **kwargs)
         finish = time.perf_counter()
-        #... In order to show descriptive information, if main() function is
-        #... being decorated, the name of the module is given. Otherwise, the 
-        #... name of the function is given.
-        if func.__name__ == 'main':
-            f = __file__
-        else:
-            f = func.__name__
-        print(f'[*] {f} executed in {round(finish-start, 2)} seconds(s)')
+        print(f'[*] {func.__name__} executed in {round(finish-start, 2)} seconds(s)')
     return wrapper
 
 if __name__ == '__main__':
