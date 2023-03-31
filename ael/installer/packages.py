@@ -1,13 +1,12 @@
-## ----------------------------------------------------------------------------
-##             { alterEGO Linux: "Open the vault of knowledge" }             ##
-## ----------------------------------------------------------------------------
-##
-## /python-ael/ael/installer/packages.py
-##   created        : 2022-11-14 11:34:18 UTC
-##   updated        : 2022-12-11 13:40:38 UTC
-##   description    : All packages
-## ____________________________________________________________________________
-
+# -----------------------------------------------------------------------------
+#               { alterEGO Linux: "Open the vault of knowledge" }
+# -----------------------------------------------------------------------------
+#
+# /python-ael/ael/installer/packages.py
+#   created        : 2022-11-14 11:34:18 UTC
+#   updated        : 2023-03-31 11:50:25 UTC
+#   description    : All packages
+# _________________________________________-___________________________________
 
 Package = namedtuple('Package', ['name', 'repository', 'interface', 'description', 'installation_mode' 'category', 'notes'])
 packages = [
@@ -22,3 +21,7 @@ packages = [
     Package('tmux', 'official', 'CLI', 'A terminal multiplexer', 'terminal', ['all'], ''),
     Package('vim', 'official', 'CLI', 'Vi Improved, a highly configurable, improved version of the vi text editor', 'text editor', ['all'], ''),
            ]
+
+# -----------------------------------------------------------------------------
+# vim: foldmethod=marker
+# ____________________________{ FIN ¯\_(ツ)_/¯ }_______________________________
