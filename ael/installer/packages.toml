@@ -140,6 +140,15 @@ package     = "extra/bluez-utils"
 description = "Development and debugging utilities for the bluetooth protocol stack"
 url         = "http://www.bluez.org/"
 
+[bmon]
+package     = "community/bmon"
+description = "Portable bandwidth monitor and rate estimator"
+url         = "https://github.com/tgraf/bmon/"
+help        = true
+man         = ['bmon(8)']
+category    = ['TUI']
+mode        = ["testing"]
+
 [bpytop]
 package     = "community/bpytop"
 description = "Resource monitor that shows usage and stats for processor, memory, disks, network and processes"
@@ -148,6 +157,12 @@ help        = true
 category    = ['Process', 'System']
 language    = "python"
 mode        = ['desktop', 'hacker']
+
+[brasero]
+package     = "extra/brasero"
+description = "CD/DVD mastering tool"
+url         = "https://wiki.gnome.org/Apps/Brasero"
+mode        = ['testing']
 
 [brave]
 package     = "aur/brave-bin"
@@ -187,6 +202,13 @@ url_aur     = "https://aur.archlinux.org/packages/burpsuite"
 desktop     = "/usr/share/applications/burpsuite.desktop"
 help        = true
 mode        = ['hacker']
+
+[caja]
+package     = "community/caja"
+description = "File manager for the MATE desktop"
+url         = "https://mate-desktop.org"
+categories  = ['File Manager', 'GUI']
+mode        = ['testing']
 
 [cmatrix]
 package     = "community/cmatrix"
@@ -228,6 +250,13 @@ provides    = ["curlftpfs"]
 man         = ["curlftpfs(1)"]
 mode        = ["testing"]
 
+[dcmtk]
+package     = "aur/dcmtk-git"
+description = "Collection of libraries and applications implementing large parts the DICOM standard"
+url         = "http://dicom.offis.de/dcmtk"
+aur_url     = "https://aur.archlinux.org/packages/dcmtk-git"
+mode        = ['testing']
+
 [dex]
 package     = "community/dex"
 description = "Program to generate and execute DesktopEntry files of type Application"
@@ -252,6 +281,12 @@ mode        = ['hacker']
 notes       = """
               - ??? symlink wordlists to /usr/local/share/wordlists/.
               """
+
+[dmg2img]
+package     = "community/dmg2img"
+description = "A CLI tool to uncompress Apple's compressed DMG files to the HFS+ IMG format"
+url         = "http://vu1tur.eu.org/tools/"
+mode        = ['ael-base']
 
 [docker]
 package     = "community/docker"
@@ -280,6 +315,18 @@ provides    = ["/usr/bin/dos2unix",
 man         = ["dos2unix(1)", "..."]
 mode        = ["ael-base"]
 
+[dosfstools]
+package     = "core/dosfstools"
+description = "DOS filesystem utilities"
+url         = "https://github.com/dosfstools/dosfstools"
+mode        = ['testing']
+
+[doublecmd]
+package     = "community/doublecmd-qt5"
+description = "twin-panel (commander-style) file manager (Qt5)"
+url         = "http://doublecmd.sourceforge.net/"
+mode        = ['testing']
+
 [dunst]
 package     = "community/dunst"
 description = "Customizable and lightweight notification-daemon."
@@ -301,6 +348,12 @@ url         = "http://eradman.com/entrproject"
 man         = ["entr(1)"]
 mode        = ["testing"]
 
+[exa]
+package     = "community/exa"
+description = "ls replacement"
+url         = "https://the.exa.website/"
+mode        = ['testing']
+
 [exfat-utils]
 package     = "community/exfat-utils"
 description = "Utilities for exFAT file system"
@@ -319,6 +372,13 @@ man         = ["dumpexfat(8)",
                "mkexfatfs(8)",
                "mount.exfat-fuse(8)"]
 mode        = ["ael-base"]
+
+[exploitdb]
+package     = "community/exploitdb"
+description = "Offensive Security’s Exploit Database Archive"
+url         = "https://www.exploit-db.com/"
+provides    = ['/usr/bin/searchsploit']
+mode        = ['hacker']
 
 [feh]
 # Replaced by nitrogen
@@ -364,12 +424,24 @@ description = "The fast distributed version control system"
 url         = "https://git-scm.com/"
 mode        = ["ael-base"]
 
+[glow]
+package     = "community/glow"
+description = "Command-line markdown renderer"
+url         = "https://github.com/charmbracelet/glow"
+mode        = ["ael-base"]
+
 [gobuster]
 package     = "aur/gobuster-git"
 description = "A directory/file & DNS busting tool."
 url         = "https://github.com/OJ/gobuster"
 url_aur     = "https://aur.archlinux.org/packages/gobuster-git"
 mode        = ["hacker"]
+
+[gping]
+package     = "community/gping"
+description = "Ping, but with a graph"
+url         = "https://github.com/orf/gping"
+mode        = ["ael-base"]
 
 [grc]
 package     = "community/grc"
@@ -389,6 +461,12 @@ package     = "core/grub"
 description = "GNU GRand Unified Bootloader (2)"
 url         = "https://www.gnu.org/software/grub/"
 mode        = ["ael-base"]
+
+[gunicorn]
+package     = "community/gunicorn"
+description = "WSGI HTTP Server for UNIX"
+url         = "https://gunicorn.org/"
+mode        = ["server"]
 
 [htop]
 package     = "extra/htop"
@@ -458,6 +536,13 @@ url         = "https://smxi.org/docs/inxi.htm"
 url_aur     = "https://aur.archlinux.org/packages/inxi-git"
 mode        = ["ael-base"]
 
+[jd-gui]
+package     = "aur/jd-gui-bin"
+description = "A standalone graphical utility that displays Java source codes of .class files"
+url         = "http://jd.benow.ca/"
+aur_url     = "https://aur.archlinux.org/packages/jd-gui-bin"
+mode        = ["testing"]
+
 [john]
 package     = "community/john"
 description = "John the Ripper password cracker"
@@ -477,6 +562,18 @@ mode        = ["ael-base"]
 package     = "extra/jre11-openjdk"
 description = "OpenJDK Java 11 full runtime environment"
 url         = "https://openjdk.java.net/"
+mode        = ["testing"]
+
+[jupyter-notebook]
+package     = "community/jupyter-notebook"
+description = "The language-agnostic HTML notebook application for Project Jupyter"
+url         = "https://github.com/jupyter/notebook"
+mode        = ["testing"]
+
+[kdenlive]
+package     = "extra/kdenlive"
+description = "A non-linear video editor for Linux using the MLT video framework"
+url         = "https://apps.kde.org/kdenlive/"
 mode        = ["testing"]
 
 [libreoffice]
@@ -543,6 +640,13 @@ description = "Linux man pages"
 url         = "https://www.kernel.org/doc/man-pages/"
 mode        = ["ael-base"]
 
+[mangl]
+package     = "aur/mangl-git"
+description = "graphical man page viewer"
+url         = "https://github.com/zigalenarcic/mangl"
+aur_url     = "https://aur.archlinux.org/packages/mangl-git"
+mode        = ["testing"]
+
 [mariadb-clients]
 package     = "extra/mariadb-clients"
 description = "MariaDB client tools"
@@ -595,6 +699,12 @@ provide     = ["/usr/bin/locate",
                "/usr/bin/updatedb"]
 mode        = ["ael-base"]
 
+[mpv]
+package     = "community/mpv"
+description = "a free, open source, and cross-platform media player"
+url         = "https://mpv.io/"
+mode        = ['Desktop']
+
 [mtools]
 package     = "extra/mtools"
 description = "A collection of utilities to access MS-DOS disks"
@@ -606,6 +716,12 @@ mode        = ["testing"]
 package     = "extra/mtr"
 description = "Combines the functionality of traceroute and ping into one tool (CLI version)"
 url         = "https://www.bitwizard.nl/mtr/"
+mode        = ["ael-base"]
+
+[neofetch]
+package     = "community/neofetch"
+description = "A CLI system information tool written in BASH that supports displaying images."
+url         = "https://github.com/dylanaraps/neofetch"
 mode        = ["ael-base"]
 
 [net-tools]
@@ -647,11 +763,23 @@ provide     = ["/usr/bin/NetworkManager",
                "/usr/bin/nmtui-hostname"]
 mode        = ["ael-base"]
 
+[network-manager-applet]
+package     = "extra/network-manager-applet"
+description = "Applet for managing network connections"
+url         = "https://gitlab.gnome.org/GNOME/network-manager-applet"
+mode        = ["Desktop"]
+
 [nfs-utils]
 package     = "core/nfs-utils"
 description = "Support programs for Network File Systems"
 url         = "http://nfs.sourceforge.net"
 mode        = ["testing"]
+
+[nginx]
+package     = "extra/nginx"
+description = "Lightweight HTTP server and IMAP/POP3 proxy server"
+url         = "https://nginx.org"
+mode        = ["server"]
 
 [nikto]
 package     = "community/nikto"
@@ -674,6 +802,20 @@ provide     = ["/usr/bin/ncat",
                "/usr/bin/nping"]
 categories  = ["cli", "networking"]
 mode        = ["ael-base"]
+
+[nmon]
+package     = "community/nmon"
+description = "AIX & Linux Performance Monitoring tool"
+url         = "http://nmon.sourceforge.net"
+categories  = ["TUI", "Monitoring", "System"]
+mode        = ["ael-base"]
+
+[nomacs]
+package     = "aur/nomacs"
+description = "A Qt image viewer"
+url         = "https://nomacs.org/"
+aur_url     = "https://aur.archlinux.org/packages/nomacs"
+mode        = ["testing"]
 
 [ntfs-3g]
 package     = "extra/ntfs-3g"
@@ -1234,118 +1376,250 @@ mode        = ["desktop", "hacker"]
 
 ### Still considering...
 # amd-ucode
+# android-file-transfer
 # arandr
-# dmg2img
-# dosfstools
-# efibootmgr
-# exfat-utils
-# go-to-meeting-nativefier
-# jupyter-notebook
-# libtool
-# libvncserver
 # audacity
-# lshw
-# nushell
-# obs-studio
-# nordvpn-bin
-# os-prober
-# pasystray
-# pulseaudio-bluetooth
-# python-markdown
-# python-flask
-# realvnc-vnc-viewer
-# rtl88x2bu-dkms-git
-# teams
-# texinfo
-# vlc
-# wireless_tools
-# zoom
-#  - android-file-transfer
-#  - doublecmd-qt5
-#  - pcmanfm-gtk3
-#  - ttf-joypixels
-#  - ttf-unifont
-#  - aur/sqsh
-#    * Unix/Linux replacement for Sybase's isql
 # bdf-unifont
-# bmon
-# brasero
 # bsd-games
-# caja
 # canon-pixma-g6000-conplete
 # captdriver-git
-# clinfo
-# dcmtk-git
-# dmenu
-# espeak
-# exa
-# exfat-utils
-# exploitdb
-# fish
+# domination
+# dropbox
 # foomatic-db-gutenprint-ppds
-# geany
-# glow
 # gnome-characters
-# gping
-# gsacn2pdf
+# go-to-meeting-nativefier
 # gucharmap
-# gunicorn
 # gutenprint
 # gvfs
 # htmlq-git
-# kdenlive
-# libtool
+# libvncserver
 # libxcrypt-compat
+# lshw
 # luit
 # lxc
-# mangl-git
-# meld
-# neofetch
-# nginx
-# nmon
-# nomacs
+# nordvpn-bin
 # noto-fonts-emoji
+# nushell
+# obs-studio
+# openvpn
+# os-prober
 # osb-studio
 # otf-font-awesome-4
 # otf-latin-modern
+# p7zip
+# pacman
+# pacman-contrib
 # pacman-contrib
 # pamac-aur
+# pamac-aur
+# pandoc-bin
+# paru
+# pasystray
+# pasystray
+# patch
+# pavucontrol
+# pcmanfm
+# pcmanfm-gtk3
+# pdfedit-bin
 # pdfedit-bin
 # pdftk
+# pdftk
+# perl-image-exiftool
+# php
+# pkgconf
 # polenum
+# polenum
+# polkit-gnome
 # polybar
+# polybar
+# postgresql
+# powershell-bin
+# pptpclient
+# proxychains-ng
+# pulseaudio
+# pulseaudio-bluetooth
+# pulseaudio-bluetooth
+# pv
 # python-bcrypt
+# python-bcrypt
+# python-beautifulsoup4
+# python-flask
+# python-flask-sqlalchemy
 # python-flask-sqlalchemy
 # python-flask-wtf
+# python-flask-wtf
+# python-markdown
+# python-markdownify
 # python-markdownify
 # python-openpyxl
+# python-openpyxl
+# python-pandas
+# python-pip
+# python-pyaml
+# python-rich
+# python-xlib
 # python-xlib
 # python-xlrd
+# python-xlrd
 # qpdfview
+# qpdfview
+# qrencode
+# qsolocards
+# qt4
+# qt5-styleplugins
+# qt5ct
+# qterminal
+# qtile
+# ranger
+# realvnc-vnc-viewer
+# realvnc-vnc-viewer
+# regionset
 # regioset
+# remmina
 # rofi
+# rofi
+# rsync
+# rtl88x2bu-dkms-git
+# rtl88x2bu-dkms-git
+# rustscan
+# sane-airscan
 # sane-arscan
+# screen
+# screenkey
 # sddm
+# sddm
+# sed
 # sendmail
+# sendmail
+# shellcheck
 # shutter-git
+# shutter-git
+# simple-mtpfs
 # snapd
+# snapd
+# socat
+# spacefm
+# sqlitebrowser
 # sqsh
+# sqsh
+# sqsh
+# sudo
+# sxhkd
+# sxiv
 # system-config-printer
+# system-config-printer
+# tcpdump
+# teams
+# tesseract
+# tesseract-data-eng
+# tesseract-data-fra
+# texinfo
+# texinfo
 # texlive-core
+# texlive-core
+# thunar
+# thunar-volman
+# tidy
 # tint2
+# tint2
+# tk
+# tmux
+# tor-browser
+# traceroute
+# transmission-gtk
+# tree
 # ttf-droid
+# ttf-font-awesome-4
+# ttf-google-fonts-git
 # ttf-google-fonts-git
 # ttf-hack
+# ttf-inconsolata
 # ttf-incosolata
+# ttf-joypixels
 # ttf-liberation
 # ttf-linux-libertine
 # ttf-ms-fonts
+# ttf-symbola
+# ttf-unifont
+# tty-solitaire-git
 # ueberzug
+# ueberzug
+# ufw
+# ugrep
+# unrar
+# unzip
+# usbutils
+# vi
+# vim
+# virtualbox
+# virtualbox-guest-utils
+# virtualbox-host-modules-arch
+# vlc
+# vlc
+# w3m
+# wfuzz-git
+# wget
+# which
+# whois
+# wireless_tools
+# wireshark-qt
 # xautomation
+# xautomation
+# xclip
+# xcompmgr
+# xdg-ninja-git
 # xdg-ninja-git
 # xdg-user-dirs
+# xdg-user-dirs
+# xdotool
 # xf86-video-intel
+# xf86-video-intel
+# xfce4-terminal
 # xorg-iceauth
+# xorg-iceauth
+# xorg-server
+# xorg-server-xephyr
+# xorg-sessreg
+# xorg-setxkbmap
+# xorg-smproxy
+# xorg-twm
+# xorg-x11perf
+# xorg-xauth
+# xorg-xbacklight
+# xorg-xclock
+# xorg-xcmsdb
+# xorg-xcursorgen
+# xorg-xdpyinfo
+# xorg-xdriinfo
+# xorg-xev
+# xorg-xgamma
+# xorg-xhost
+# xorg-xinit
+# xorg-xinput
+# xorg-xkbcomp
+# xorg-xkbevd
+# xorg-xkbutils
+# xorg-xkill
+# xorg-xlsatoms
+# xorg-xlsclients
+# xorg-xmodmap
+# xorg-xpr
+# xorg-xprop
+# xorg-xrandr
+# xorg-xrdb
+# xorg-xrefresh
+# xorg-xsetroot
+# xorg-xvinfo
+# xorg-xwd
+# xorg-xwininfo
+# xorg-xwud
+# xterm
+# youtube-dl
+# zaproxy
+# zathura
+# zathura-pdf-mupdf
+# zbar
+# zoom
 
 # -----------------------------------------------------------------------------
 # vim: foldmethod=marker
