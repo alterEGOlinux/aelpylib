@@ -123,6 +123,23 @@ category    = ['System']
 language    = "python"
 mode        = ['desktop', 'hacker']
 
+[blueman]
+package     = "community/blueman"
+description = "GTK+ Bluetooth Manager"
+url         = "https://github.com/blueman-project/blueman"
+mode        = ["desktop"]
+
+[bluez]
+package     = "extra/bluez"
+description = "Daemons for the bluetooth protocol stack"
+url         = "http://www.bluez.org/"
+mode        = ["ael-base"]
+
+[bluez-utils]
+package     = "extra/bluez-utils"
+description = "Development and debugging utilities for the bluetooth protocol stack"
+url         = "http://www.bluez.org/"
+
 [bpytop]
 package     = "community/bpytop"
 description = "Resource monitor that shows usage and stats for processor, memory, disks, network and processes"
@@ -1218,9 +1235,6 @@ mode        = ["desktop", "hacker"]
 ### Still considering...
 # amd-ucode
 # arandr
-# blueman
-# bluez
-# bluez-utils
 # dmg2img
 # dosfstools
 # efibootmgr
