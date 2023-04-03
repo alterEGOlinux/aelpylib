@@ -823,6 +823,12 @@ description = "NTFS filesystem driver and utilities"
 url         = "https://www.tuxera.com/community/open-source-ntfs-3g/"
 mode        = ["ael-base"]
 
+[obs-studio]
+package     = "community/obs-studio"
+description = "Free, open source software for live streaming and recording"
+url         = "https://obsproject.com"
+mode        = ["testing"]
+
 [openssh]
 package     = "core/openssh"
 description = "SSH protocol implementation for remote login, command execution and file transfer"
@@ -847,11 +853,30 @@ url         = "https://openvpn.net/index.php/open-source.html"
 man         = ["openvpn(8)"]
 mode        = ["ael-base"]
 
+[os-prober]
+package     = "community/os-prober"
+description = "Utility to detect other OSes on a set of drives"
+url         = "https://joeyh.name/code/os-prober/"
+mode        = ["ael-base"]
+
 [p7zip]
 package     = "extra/p7zip"
 description = "Command-line file archiver with high compression ratio"
 url         = "https://github.com/jinfeihan57/p7zip"
 mode        = ["ael-base"]
+
+[pacman-contrib]
+package     = "community/pacman-contrib"
+description = "Contributed scripts and tools for pacman systems"
+url         = "https://gitlab.archlinux.org/pacman/pacman-contrib"
+mode        = "ael-base"
+
+[pamac-aur]
+package     = "aur/pamac-aur"
+description = "A Gtk3 frontend, Package Manager based on libalpm with AUR and Appstream support"
+url         = "https://gitlab.manjaro.org/applications/pamac"
+aur_url     = "https://aur.archlinux.org/packages/pamac-aur"
+mode        = ["testing"]
 
 [pandoc]
 package     = "aur/pandoc-bin"
@@ -859,6 +884,19 @@ description = "Conversion between markup formats"
 url         = "https://pandoc.org"
 url_aur     = "https://aur.archlinux.org/packages/pandoc-bin"
 mode        = ["ael-base"]
+
+[paru]
+package     = "aur/paru"
+description = "Feature packed AUR helper"
+url         = "https://github.com/morganamilo/paru"
+aur_url     = "https://aur.archlinux.org/packages/paru"
+mode        = ["ael-base"]
+
+[pasystray]
+package     = "community/pasystray"
+description = "PulseAudio system tray (a replacement for padevchooser)"
+url         = "https://github.com/christophgysin/pasystray"
+mode        = ["desktop"]
 
 [pavucontrol]
 package     = "extra/pavucontrol"
@@ -878,6 +916,20 @@ package     = "extra/php"
 description = "A general-purpose scripting language that is especially suited to web development"
 url         = "https://www.php.net/"
 mode        = ["ael-base"]
+
+[pipdeptree]
+package     = "aur/pipdeptree"
+description = "Command line utility to show dependency tree of Python packages"
+url         = "https://github.com/naiquevin/pipdeptree"
+aur_url     = "https://aur.archlinux.org/packages/pipdeptree"
+mode        = ["testing"]
+
+[polenum]
+package     = "aur/polenum"
+description = "A python script to extract the password policy information from a windows machine."
+url         = "https://github.com/Wh1t3Fox/polenum"
+aur_url     = "https://aur.archlinux.org/packages/polenum"
+mode        = ["testing"]
 
 [polkit-gnome]
 package     = "community/polkit-gnome"
@@ -935,6 +987,12 @@ description = "A featureful, general-purpose sound server"
 url         = "https://www.freedesktop.org/wiki/Software/PulseAudio/"
 mode        = ["desktop", "hacker"]
 
+[pulseaudio-bluetooth]
+package     = "extra/pulseaudio-bluetooth"
+description = "Bluetooth support for PulseAudio"
+url         = "https://www.freedesktop.org/wiki/Software/PulseAudio/"
+mode        = ["desktop"]
+
 [pv]
 package     = "community/pv"
 description = "A terminal-based tool for monitoring the progress of data through a pipeline."
@@ -947,11 +1005,25 @@ description = "Next generation of the python high-level scripting language"
 url         = "https://www.python.org/"
 mode        = ["ael-base"]
 
+[python-bcrypt]
+
 [python-beautifulsoup4]
 package     = "community/python-beautifulsoup4"
 description = "A Python HTML/XML parser designed for quick turnaround projects like screen-scraping"
 url         = "https://www.crummy.com/software/BeautifulSoup/index.html"
 mode        = ["ael-base"]
+
+[python-flask]
+
+[python-flask-sqlalchemy]
+
+[python-flask-wtf]
+
+[python-markdown]
+
+[python-markdownify]
+
+[python-openpyxl]
 
 [python-pandas]
 package     = "community/python-pandas"
@@ -977,11 +1049,23 @@ description = "Render rich text, tables, progress bars, syntax highlighting, mar
 url         = "https://github.com/willmcgugan/rich"
 mode        = ["ael-base"]
 
+[python-xlib]
+
+[python-xlrd]
+
 [qrencode]
 package     = "extra/qrencode"
 description = "C library for encoding data in a QR Code symbol."
 url         = "https://fukuchi.org/works/qrencode/"
 mode        = ["ael-base"]
+
+[qsolocards]
+package     = "aur/qsolocards"
+description = "A free collection of solitaire card games written using Qt"
+url         = "http://sourceforge.net/projects/qsolocards/"
+aur_url     = "https://aur.archlinux.org/packages/qsolocards"
+categories  = ["gui", "game"]
+mode        = ["desktop"]
 
 [qterminal]
 package     = "community/qterminal"
@@ -1400,101 +1484,17 @@ mode        = ["desktop", "hacker"]
 # nordvpn-bin
 # noto-fonts-emoji
 # nushell
-# obs-studio
-# openvpn
-# os-prober
-# osb-studio
 # otf-font-awesome-4
 # otf-latin-modern
-# p7zip
-# pacman
-# pacman-contrib
-# pacman-contrib
-# pamac-aur
-# pamac-aur
-# pandoc-bin
-# paru
-# pasystray
-# pasystray
-# patch
-# pavucontrol
-# pcmanfm
-# pcmanfm-gtk3
-# pdfedit-bin
 # pdfedit-bin
 # pdftk
-# pdftk
-# perl-image-exiftool
-# php
-# pkgconf
-# polenum
-# polenum
-# polkit-gnome
-# polybar
-# polybar
-# postgresql
-# powershell-bin
-# pptpclient
-# proxychains-ng
-# pulseaudio
-# pulseaudio-bluetooth
-# pulseaudio-bluetooth
-# pv
-# python-bcrypt
-# python-bcrypt
-# python-beautifulsoup4
-# python-flask
-# python-flask-sqlalchemy
-# python-flask-sqlalchemy
-# python-flask-wtf
-# python-flask-wtf
-# python-markdown
-# python-markdownify
-# python-markdownify
-# python-openpyxl
-# python-openpyxl
-# python-pandas
-# python-pip
-# python-pyaml
-# python-rich
-# python-xlib
-# python-xlib
-# python-xlrd
-# python-xlrd
 # qpdfview
-# qpdfview
-# qrencode
-# qsolocards
-# qt4
-# qt5-styleplugins
-# qt5ct
-# qterminal
-# qtile
-# ranger
 # realvnc-vnc-viewer
-# realvnc-vnc-viewer
-# regionset
-# regioset
-# remmina
-# rofi
-# rofi
-# rsync
-# rtl88x2bu-dkms-git
 # rtl88x2bu-dkms-git
 # rustscan
 # sane-airscan
-# sane-arscan
-# screen
-# screenkey
-# sddm
-# sddm
-# sed
 # sendmail
-# sendmail
-# shellcheck
 # shutter-git
-# shutter-git
-# simple-mtpfs
 # snapd
 # snapd
 # socat
