@@ -4,7 +4,7 @@
 #
 # /packages.toml
 #   created        : 2023-03-31 12:22:52 UTC
-#   updated        : 2023-03-31 12:23:53 UTC
+#   updated        : 2023-04-03 20:23:52 UTC
 #   description    : packages
 # _____________________________________________________________________________
 
@@ -1115,11 +1115,25 @@ description = "A screencast tool to display your keys inspired by Screenflick"
 url         = "https://www.thregr.org/~wavexx/software/screenkey/"
 mode        = ["desktop", "hacker"]
 
+[sendmail]
+package     = "aur/sendmail"
+description = "A general purpose internetwork email routing MTA"
+url         = "http://www.sendmail.org"
+aur_url     = "https://aur.archlinux.org/packages/sendmail"
+mode        = ["testing"]
+
 [shellcheck]
 package     = "community/shellcheck"
 description = "Shell script analysis tool"
 url         = "https://www.shellcheck.net"
 mode        = ["ael-base"]
+
+[shutter]
+package     = "aur/shutter-git"
+description = "A featureful screenshot tool, git version"
+url         = "https://shutter-project.org/"
+aur_url     = "https://aur.archlinux.org/packages/shutter-git"
+mode        = ["testing"]
 
 [simple-mtpfs]
 package     = "aur/simple-mtpfs"
@@ -1133,6 +1147,13 @@ package     = "extra/smbclient"
 description = "Tools to access a server's filespace and printers via SMB"
 url         = "https://www.samba.org"
 mode        = ["hacker"]
+
+[snapd]
+package     = "aur/snapd"
+description = "Service and tools for management of snap packages."
+url         = "https://github.com/snapcore/snapd"
+aur_url     = "https://aur.archlinux.org/packages/snapd"
+mode        = ["testing"]
 
 [socat]
 package     = "extra/socat"
@@ -1161,6 +1182,19 @@ note        = """
               """
 mode        = ["hacker"]
 
+[sqsh]
+package     = "aur/sqsh"
+description = "Unix/Linux replacement for Sybase's isql"
+url         = "https://sourceforge.net/projects/sqsh/"
+aur_url     = "https://aur.archlinux.org/packages/sqsh"
+mode        = ["testing"]
+
+[sxhkd]
+package     = "community/sxhkd"
+description = "Simple X hotkey daemon"
+url         = "https://github.com/baskerville/sxhkd"
+mode        = ["testing"]
+
 [sxiv]
 package     = "community/sxiv"
 description = "Simple X Image Viewer"
@@ -1184,6 +1218,21 @@ url         = "https://github.com/tesseract-ocr/tesseract"
 plugins     = ["community/tesseract-data-eng",
                "community/tesseract-data-fra"]
 mode        = ["desktop", "hacker"]
+
+[texinfo]
+package     = "core/texinfo"
+description = "GNU documentation system for on-line information and printed output"
+url         = "https://www.gnu.org/software/texinfo/"
+provides    = ["/usr/bin/info",
+               "/usr/bin/install-info",
+               "/usr/bin/makeinfo",
+               "/usr/bin/pdftexi2dvi",
+               "/usr/bin/pod2texi",
+               "/usr/bin/texi2any",
+               "/usr/bin/texi2dvi",
+               "/usr/bin/texi2pdf",
+               "/usr/bin/texindex"]
+mode        = ["ael-base"]
 
 [thunar]
 package     = "extra/thunar"
@@ -1259,6 +1308,12 @@ description = "Uncomplicated and easy to use CLI tool for managing a netfilter f
 url         = "https://launchpad.net/ufw"
 mode        = ["ael-base"]
 
+[ugrep]
+package     = "community/ugrep"
+description = "ultra fast grep with interactive TUI, fuzzy search, boolean queries, hexdumps and more"
+url         = "https://github.com/Genivia/ugrep"
+mode        = ["testing"]
+
 [unrar]
 package     = "extra/unrar"
 description = "The RAR uncompression program"
@@ -1300,6 +1355,12 @@ package     = "community/virtualbox-host-modules-arch"
 description = "Virtualbox host kernel modules for Arch Kernel"
 url         = "https://virtualbox.org/"
 mode        = ["desktop", "hacker"]
+
+[vlc]
+package     = "extra/vlc"
+description = "Multi-platform MPEG, VCD/DVD, and DivX player"
+url         = "https://www.videolan.org/vlc/"
+mode        = ["desktop"]
 
 [w3m]
 package     = "extra/w3m"
@@ -1491,43 +1552,8 @@ mode        = ["desktop", "hacker"]
 # qpdfview
 # realvnc-vnc-viewer
 # rtl88x2bu-dkms-git
-# rustscan
-# sane-airscan
-# sendmail
-# shutter-git
-# snapd
-# snapd
-# socat
-# spacefm
-# sqlitebrowser
-# sqsh
-# sqsh
-# sqsh
-# sudo
-# sxhkd
-# sxiv
 # system-config-printer
-# system-config-printer
-# tcpdump
 # teams
-# tesseract
-# tesseract-data-eng
-# tesseract-data-fra
-# texinfo
-# texinfo
-# texlive-core
-# texlive-core
-# thunar
-# thunar-volman
-# tidy
-# tint2
-# tint2
-# tk
-# tmux
-# tor-browser
-# traceroute
-# transmission-gtk
-# tree
 # ttf-droid
 # ttf-font-awesome-4
 # ttf-google-fonts-git
@@ -1543,24 +1569,6 @@ mode        = ["desktop", "hacker"]
 # ttf-unifont
 # tty-solitaire-git
 # ueberzug
-# ueberzug
-# ufw
-# ugrep
-# unrar
-# unzip
-# usbutils
-# vi
-# vim
-# virtualbox
-# virtualbox-guest-utils
-# virtualbox-host-modules-arch
-# vlc
-# vlc
-# w3m
-# wfuzz-git
-# wget
-# which
-# whois
 # wireless_tools
 # wireshark-qt
 # xautomation
