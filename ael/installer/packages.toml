@@ -1387,6 +1387,12 @@ description = "Intelligent WHOIS client"
 url         = "https://github.com/rfc1036/whois"
 mode        = ["ael-base"]
 
+[wireless_tools]
+package     = "extra/wireless_tools"
+description = "Tools allowing to manipulate the Wireless Extensions"
+url         = "https://hewlettpackard.github.io/wireless-tools/Tools.html"
+mode        = ["testing"]
+
 [wireshark]
 package     = "community/wireshark-qt"
 description = "Network traffic and protocol analyzer/sniffer - Qt GUI."
@@ -1400,6 +1406,12 @@ description = "Network traffic and protocol analyzer/sniffer - CLI tools and dat
 url         = "https://www.wireshark.org/"
 mode        = ["hacker"]
 
+[xautomation]
+package     = "community/xautomation"
+description = "Controls X from the command line and does 'visual scraping'."
+url         = "https://hoopajoo.net/projects/xautomation.html"
+mode        = ["testing"]
+
 [xclip]
 package     = "extra/xclip"
 description = "Command line interface to the X11 clipboard"
@@ -1411,6 +1423,19 @@ package     = "extra/xcompmgr"
 description = "Composite Window-effects manager for X.org"
 url         = "https://xorg.freedesktop.org/"
 mode        = ["desktop", "hacker"]
+
+[xdg-ninja]
+package     = "aur/xdg-ninja-git"
+description = "A shell script which checks your $HOME for unwanted files and directories."
+url         = "https://github.com/b3nj5m1n/xdg-ninja"
+aur_url     = "https://aur.archlinux.org/packages/xdg-ninja-git"
+mode        = ["ael-base"]
+
+[xdg-user-dirs]
+package     = "extra/xdg-user-dirs"
+description = "Manage user directories like ~/Desktop and ~/Music"
+url         = "https://www.freedesktop.org/wiki/Software/xdg-user-dirs"
+mode        = ["testing"]
 
 [xdotool]
 package     = "community/xdotool"
@@ -1439,6 +1464,12 @@ url         = "https://xorg.freedesktop.org"
 provides    = ["Xephyr"]
 man         = ["Xephyr(1)"]
 mode        = ["desktop", "hacker"]
+
+[xorg-setxkbmap]
+package     = "extra/xorg-setxkbmap"
+description = "Set the keyboard using the X Keyboard Extension"
+url         = "https://xorg.freedesktop.org/"
+mode        = ["desktop"]
 
 [xorg-xev]
 group       = "xorg-apps"
@@ -1555,40 +1586,18 @@ mode        = ["desktop", "hacker"]
 # system-config-printer
 # teams
 # ttf-droid
-# ttf-font-awesome-4
-# ttf-google-fonts-git
 # ttf-google-fonts-git
 # ttf-hack
 # ttf-inconsolata
-# ttf-incosolata
 # ttf-joypixels
 # ttf-liberation
 # ttf-linux-libertine
 # ttf-ms-fonts
-# ttf-symbola
 # ttf-unifont
-# tty-solitaire-git
 # ueberzug
-# wireless_tools
-# wireshark-qt
-# xautomation
-# xautomation
-# xclip
-# xcompmgr
-# xdg-ninja-git
-# xdg-ninja-git
-# xdg-user-dirs
-# xdg-user-dirs
-# xdotool
 # xf86-video-intel
-# xf86-video-intel
-# xfce4-terminal
 # xorg-iceauth
-# xorg-iceauth
-# xorg-server
-# xorg-server-xephyr
 # xorg-sessreg
-# xorg-setxkbmap
 # xorg-smproxy
 # xorg-twm
 # xorg-x11perf
@@ -1599,10 +1608,7 @@ mode        = ["desktop", "hacker"]
 # xorg-xcursorgen
 # xorg-xdpyinfo
 # xorg-xdriinfo
-# xorg-xev
 # xorg-xgamma
-# xorg-xhost
-# xorg-xinit
 # xorg-xinput
 # xorg-xkbcomp
 # xorg-xkbevd
@@ -1613,7 +1619,6 @@ mode        = ["desktop", "hacker"]
 # xorg-xmodmap
 # xorg-xpr
 # xorg-xprop
-# xorg-xrandr
 # xorg-xrdb
 # xorg-xrefresh
 # xorg-xsetroot
@@ -1621,12 +1626,6 @@ mode        = ["desktop", "hacker"]
 # xorg-xwd
 # xorg-xwininfo
 # xorg-xwud
-# xterm
-# youtube-dl
-# zaproxy
-# zathura
-# zathura-pdf-mupdf
-# zbar
 # zoom
 
 # -----------------------------------------------------------------------------
