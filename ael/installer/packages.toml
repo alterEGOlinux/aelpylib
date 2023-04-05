@@ -4,7 +4,7 @@
 #
 # /packages.toml
 #   created        : 2023-03-31 12:22:52 UTC
-#   updated        : 2023-04-03 20:23:52 UTC
+#   updated        : 2023-04-05 01:25:40 UTC
 #   description    : packages
 # _____________________________________________________________________________
 
@@ -29,6 +29,9 @@ package     = "community/amfora"
 description = "Terminal browser for the Gemini protocol"
 url         = "https://github.com/makeworld-the-better-one/amfora"
 mode        = ["testing"]
+
+[amd-ucode]
+mode        = ["amd"]
 
 [arch-wiki-docs]
 repository  = "community/arch-wiki-docs"
@@ -264,6 +267,8 @@ url         = "https://github.com/jceb/dex"
 man         = ['dex(1)']
 mode        = ['testing']
 
+[dialog]
+
 [dirbuster]
 package     = "aur/dirbuster"
 description = "An application designed to brute force directories and files names on web/application servers"
@@ -340,6 +345,8 @@ description = "Simple shell based CA utility"
 url         = "https://github.com/OpenVPN/easy-rsa"
 provides    = ["easyrsa"]
 mode        = ["ael-base"]
+
+[efibootmgr]
 
 [entr]
 package     = "community/entr"
@@ -429,6 +436,18 @@ package     = "community/glow"
 description = "Command-line markdown renderer"
 url         = "https://github.com/charmbracelet/glow"
 mode        = ["ael-base"]
+
+[go]
+package     = "community/go"
+description = "Core compiler tools for the Go programming language"
+url         = "https://golang.org/"
+mode        = ["ael-base"]
+
+[go-to-meeting]
+package     = "aur/go-to-meeting-nativefier"
+description = "GoToMeeting desktop built with nativefier (electron)"
+aur_url     = "https://aur.archlinux.org/packages/go-to-meeting-nativefier"
+mode        = ["testing"]
 
 [gobuster]
 package     = "aur/gobuster-git"
@@ -817,6 +836,14 @@ url         = "https://nomacs.org/"
 aur_url     = "https://aur.archlinux.org/packages/nomacs"
 mode        = ["testing"]
 
+[nordvpn]
+package     = "aur/nordvpn-bin"
+description = "NordVPN CLI tool for Linux"
+url         = "https://nordvpn.com/download/linux/"
+aur_url     = "https://aur.archlinux.org/packages/nordvpn-bin"
+categories  = ["vpn"]
+mode        = ["testing"]
+
 [ntfs-3g]
 package     = "extra/ntfs-3g"
 description = "NTFS filesystem driver and utilities"
@@ -851,6 +878,7 @@ package     = "extra/openvpn"
 description = "An easy-to-use, robust and highly configurable VPN (Virtual Private Network)."
 url         = "https://openvpn.net/index.php/open-source.html"
 man         = ["openvpn(8)"]
+categories  = ["vpn"]
 mode        = ["ael-base"]
 
 [os-prober]
@@ -1021,9 +1049,11 @@ mode        = ["ael-base"]
 
 [python-markdown]
 
-[python-markdownify]
-
 [python-openpyxl]
+package     = "community/python-openpyxl"
+description = "A Python library to read/write Excel 2007 xlsx/xlsm files"
+url         = "https://openpyxl.readthedocs.org/"
+mode        = ["testing"]
 
 [python-pandas]
 package     = "community/python-pandas"
@@ -1084,6 +1114,8 @@ package     = "community/ranger"
 description = "Simple, vim-like file manager"
 url         = "https://ranger.github.io"
 mode        = ["ael-base"]
+
+[realvnc-vnc-viewer]
 
 [remmina]
 package     = "community/remmina"
@@ -1210,6 +1242,8 @@ note        = """
               #*ref.* [Daniel Miessler, "A tcpdump Tutorial with Examples — 50 Ways to Isolate Traffic"]( https://danielmiessler.com/study/tcpdump/)
               """
 mode        = ["ael-base"]
+
+[teams]
 
 [tesseract]
 package     = "community/tesseract"
@@ -1550,20 +1584,17 @@ provides    = ["/usr/bin/zbarcam",
                "/usr/bin/zbarimg"]
 mode        = ["desktop", "hacker"]
 
+[zoom]
+
 ### Still considering...
-# amd-ucode
 # android-file-transfer
 # arandr
-# audacity
-# bdf-unifont
-# bsd-games
 # canon-pixma-g6000-conplete
 # captdriver-git
 # domination
 # dropbox
 # foomatic-db-gutenprint-ppds
 # gnome-characters
-# go-to-meeting-nativefier
 # gucharmap
 # gutenprint
 # gvfs
@@ -1573,7 +1604,6 @@ mode        = ["desktop", "hacker"]
 # lshw
 # luit
 # lxc
-# nordvpn-bin
 # noto-fonts-emoji
 # nushell
 # otf-font-awesome-4
@@ -1581,11 +1611,8 @@ mode        = ["desktop", "hacker"]
 # pdfedit-bin
 # pdftk
 # qpdfview
-# realvnc-vnc-viewer
 # rtl88x2bu-dkms-git
 # system-config-printer
-# teams
-# ttf-droid
 # ttf-google-fonts-git
 # ttf-hack
 # ttf-inconsolata
@@ -1593,40 +1620,8 @@ mode        = ["desktop", "hacker"]
 # ttf-liberation
 # ttf-linux-libertine
 # ttf-ms-fonts
-# ttf-unifont
 # ueberzug
 # xf86-video-intel
-# xorg-iceauth
-# xorg-sessreg
-# xorg-smproxy
-# xorg-twm
-# xorg-x11perf
-# xorg-xauth
-# xorg-xbacklight
-# xorg-xclock
-# xorg-xcmsdb
-# xorg-xcursorgen
-# xorg-xdpyinfo
-# xorg-xdriinfo
-# xorg-xgamma
-# xorg-xinput
-# xorg-xkbcomp
-# xorg-xkbevd
-# xorg-xkbutils
-# xorg-xkill
-# xorg-xlsatoms
-# xorg-xlsclients
-# xorg-xmodmap
-# xorg-xpr
-# xorg-xprop
-# xorg-xrdb
-# xorg-xrefresh
-# xorg-xsetroot
-# xorg-xvinfo
-# xorg-xwd
-# xorg-xwininfo
-# xorg-xwud
-# zoom
 
 # -----------------------------------------------------------------------------
 # vim: foldmethod=marker
