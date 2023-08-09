@@ -1,56 +1,48 @@
-# -----------------------------------------------------------------------------
-#               { alterEGO Linux: "Open the vault of knowledge" }
-# -----------------------------------------------------------------------------
-#
-# /packages.toml
-#   created        : 2023-03-31 12:22:52 UTC
-#   updated        : 2023-04-05 01:25:40 UTC
-#   description    : packages
-# _____________________________________________________________________________
+## ----------------------------------------------------------------------- INFO
+## [packages.toml]
+## author        = "fantomH @alterEGO Linux"
+## created       = 2023-08-09 02:19:15 UTC
+## updated       = 2023-08-09 02:19:15 UTC
+## description   = "alterEGO Linux packages."
 
 [alacritty]
-package     = "community/alacritty"
-description = "A cross-platform, GPU-accelerated terminal emulator."
-url         = "https://github.com/alacritty/alacritty"
-desktop     = "/usr/share/applications/Alacritty.desktop"
-man         = ['alacritty(1)',
-               'alacritty-msg(1)']
-mode        = ['desktop', 'hacker']
+package          = "community/alacritty"
+description      = "A cross-platform, GPU-accelerated terminal emulator."
+url              = "https://github.com/alacritty/alacritty"
 
 [alsa-utils]
-package     = "extra/alsa-utils"
-description = "Advanced Linux Sound Architecture - Utilities"
-url         = "https://www.alsa-project.org"
-man         = ['alsamixer(1)']
-mode        = ['desktop', 'hacker']
+package          = "extra/alsa-utils"
+description      = "Advanced Linux Sound Architecture - Utilities"
+url              = "https://www.alsa-project.org"
 
-[amfora]
-package     = "community/amfora"
-description = "Terminal browser for the Gemini protocol"
-url         = "https://github.com/makeworld-the-better-one/amfora"
-mode        = ["testing"]
+# [amfora]
+# package          = "community/amfora"
+# description      = "Terminal browser for the Gemini protocol"
+# url              = "https://github.com/makeworld-the-better-one/amfora"
 
 [amd-ucode]
 mode        = ["amd"]
 
-[arch-wiki-docs]
-repository  = "community/arch-wiki-docs"
-description = "Pages from Arch Wiki optimized for offline browsing"
-url         = "https://github.com/lahwaacz/arch-wiki-docs"
-mode        = ["testing"]
+[archlinux-java-run]
+package          = "aur/archlinux-java-run"
+description      = "Java Application Launcher for Arch Linux."
+url              = "https://github.com/michaellass/archlinux-java-run"
+notes            = "Useful to set version of Java Runtime for Burp Suite."
+
+# [arch-wiki-docs]
+# repository       = "community/arch-wiki-docs"
+# description      = "Pages from Arch Wiki optimized for offline browsing"
+# url              = "https://github.com/lahwaacz/arch-wiki-docs"
 
 [arp-scan]
-package     = "community/arp-scan"
-description = "A tool that uses ARP to discover and fingerprint IP hosts on the local network"
-url         = "https://github.com/royhills/arp-scan"
-man         = ['arp-scan(1)']
-mode        = ['hacker']
+package          = "community/arp-scan"
+description      = "A tool that uses ARP to discover and fingerprint IP hosts on the local network"
+url              = "https://github.com/royhills/arp-scan"
 
 [bash-completion]
-package     = "extra/bash-completion"
-description = "Programmable completion for the bash shell"
-url         = "https://github.com/scop/bash-completion"
-mode        = ['ael-base']
+package          = "extra/bash-completion"
+description      = "Programmable completion for the bash shell"
+url              = "https://github.com/scop/bash-completion"
 
 [bat]
 package     = "community/bat"
@@ -69,44 +61,40 @@ man         = ['bc(1)',
 mode        = ['ael-base']
 
 [bind]
-package     = "extra/bind"
-description = "A complete, highly portable implementation of the DNS protocol"
-url         = "https://www.isc.org/software/bind/"
-man         = ['dig(1)',
-               'host(1)',
-               'nslookup(1)']
-provides    = ['/usr/bin/arpaname',
-               '/usr/bin/ddns-confgen',
-               '/usr/bin/delv',
-               '/usr/bin/dig',
-               '/usr/bin/dnssec-cds',
-               '/usr/bin/dnssec-checkds',
-               '/usr/bin/dnssec-coverage',
-               '/usr/bin/dnssec-dsfromkey',
-               '/usr/bin/dnssec-importkey',
-               '/usr/bin/dnssec-keyfromlabel',
-               '/usr/bin/dnssec-keygen',
-               '/usr/bin/dnssec-keymgr',
-               '/usr/bin/dnssec-revoke',
-               '/usr/bin/dnssec-settime',
-               '/usr/bin/dnssec-signzone',
-               '/usr/bin/dnssec-verify',
-               '/usr/bin/host',
-               '/usr/bin/mdig',
-               '/usr/bin/named',
-               '/usr/bin/named-checkconf',
-               '/usr/bin/named-checkzone',
-               '/usr/bin/named-compilezone',
-               '/usr/bin/named-journalprint',
-               '/usr/bin/named-nzd2nzf',
-               '/usr/bin/named-rrchecker',
-               '/usr/bin/nsec3hash',
-               '/usr/bin/nslookup',
-               '/usr/bin/nsupdate',
-               '/usr/bin/rndc',
-               '/usr/bin/rndc-confgen',
-               '/usr/bin/tsig-keygen']
-mode        = ['ael-base']
+package          = "extra/bind"
+description      = "A complete, highly portable implementation of the DNS protocol"
+url              = "https://www.isc.org/software/bind/"
+provides         = ['/usr/bin/arpaname',
+                    '/usr/bin/ddns-confgen',
+                    '/usr/bin/delv',
+                    '/usr/bin/dig',
+                    '/usr/bin/dnssec-cds',
+                    '/usr/bin/dnssec-checkds',
+                    '/usr/bin/dnssec-coverage',
+                    '/usr/bin/dnssec-dsfromkey',
+                    '/usr/bin/dnssec-importkey',
+                    '/usr/bin/dnssec-keyfromlabel',
+                    '/usr/bin/dnssec-keygen',
+                    '/usr/bin/dnssec-keymgr',
+                    '/usr/bin/dnssec-revoke',
+                    '/usr/bin/dnssec-settime',
+                    '/usr/bin/dnssec-signzone',
+                    '/usr/bin/dnssec-verify',
+                    '/usr/bin/host',
+                    '/usr/bin/mdig',
+                    '/usr/bin/named',
+                    '/usr/bin/named-checkconf',
+                    '/usr/bin/named-checkzone',
+                    '/usr/bin/named-compilezone',
+                    '/usr/bin/named-journalprint',
+                    '/usr/bin/named-nzd2nzf',
+                    '/usr/bin/named-rrchecker',
+                    '/usr/bin/nsec3hash',
+                    '/usr/bin/nslookup',
+                    '/usr/bin/nsupdate',
+                    '/usr/bin/rndc',
+                    '/usr/bin/rndc-confgen',
+                    '/usr/bin/tsig-keygen']
 
 [binwalk]
 package     = "community/binwalk"
@@ -168,15 +156,10 @@ url         = "https://wiki.gnome.org/Apps/Brasero"
 mode        = ['testing']
 
 [brave]
-package     = "aur/brave-bin"
-description = "Web browser that blocks ads and trackers by default (binary release)"
-url         = "https://brave.com"
-url_aur     = "https://aur.archlinux.org/packages/brave-bin"
-help        = false
-desktop     = "/usr/share/applications/brave-browser.desktop"
-category    = ['Internet', 'Web Browser']
-languague   = "JavaScript, Swift, C++"
-mode        = ['desktop', 'hacker']
+package          = "aur/brave-bin"
+description      = "Web browser that blocks ads and trackers by default (binary release)"
+url              = "https://brave.com"
+url_aur          = "https://aur.archlinux.org/packages/brave-bin"
 
 [brightnessctl]
 package     = "community/brightnessctl"
@@ -198,13 +181,11 @@ language    = "python"
 mode        = ['desktop', 'hacker']
 
 [burpsuite]
-package     = "aur/burpsuite"
-description = "An integrated platform for performing security testing of web applications (free edition)"
-url         = "https://portswigger.net/burp/"
-url_aur     = "https://aur.archlinux.org/packages/burpsuite"
-desktop     = "/usr/share/applications/burpsuite.desktop"
-help        = true
-mode        = ['hacker']
+package          = "aur/burpsuite"
+description      = "An integrated platform for performing security testing of web applications (free edition)"
+url              = "https://portswigger.net/burp/"
+url_aur          = "https://aur.archlinux.org/packages/burpsuite"
+notes            = "Requires java-openjdk to be set as default."
 
 [caja]
 package     = "community/caja"
@@ -214,12 +195,9 @@ categories  = ['File Manager', 'GUI']
 mode        = ['testing']
 
 [cmatrix]
-package     = "community/cmatrix"
-description = "A curses-based scrolling 'Matrix'-like screen"
-url         = "https://www.asty.org/cmatrix/"
-help        = true
-man         = ['cmatrix(1)']
-mode        = ['hacker']
+package          = "community/cmatrix"
+description      = "A curses-based scrolling 'Matrix'-like screen"
+url              = "https://www.asty.org/cmatrix/"
 
 [code]
 package     = "community/code"
@@ -577,11 +555,15 @@ description = "Command-line JSON processor"
 url         = "https://stedolan.github.io/jq/"
 mode        = ["ael-base"]
 
-[jre11-openjdk]
-package     = "extra/jre11-openjdk"
-description = "OpenJDK Java 11 full runtime environment"
-url         = "https://openjdk.java.net/"
-mode        = ["testing"]
+[jre-openjdk]
+package          = "extra/jre-openjdk"
+description      = "OpenJDK Java 20 full runtime environment"
+url              = "https://openjdk.java.net/"
+
+# [jre11-openjdk]
+# package          = "extra/jre11-openjdk"
+# description      = "OpenJDK Java 11 full runtime environment"
+# url              = "https://openjdk.java.net/"
 
 [jupyter-notebook]
 package     = "community/jupyter-notebook"
@@ -596,10 +578,9 @@ url         = "https://apps.kde.org/kdenlive/"
 mode        = ["testing"]
 
 [libreoffice]
-package     = "extra/libreoffice-fresh"
-description = "LibreOffice branch which contains new features and program enhancements"
-url         = "https://www.libreoffice.org/"
-mode        = ["desktop", "hacker"]
+package          = "extra/libreoffice-fresh"
+description      = "LibreOffice branch which contains new features and program enhancements"
+url              = "https://www.libreoffice.org/"
 
 [librespeed-cli]
 package     = "aur/librespeed-cli-bin"
@@ -1623,6 +1604,5 @@ mode        = ["desktop", "hacker"]
 # ueberzug
 # xf86-video-intel
 
-# -----------------------------------------------------------------------------
 # vim: foldmethod=marker
-# ____________________________{ FIN ¯\_(ツ)_/¯ }_______________________________
+## ------------------------------------------------------------- FIN ¯\_(ツ)_/¯
