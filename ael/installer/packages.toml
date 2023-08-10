@@ -23,13 +23,21 @@ url              = "https://www.alsa-project.org"
 [pkg.amd-ucode]
 mode        = ["amd"]
 
+[pkg.arandr]
+package          = "extra/arandr"
+description      = "Provide a simple visual front end for XRandR 1.2."
+url              = "https://christian.amsuess.com/tools/arandr/"
+
 [pkg.archlinux-java-run]
+## (* notes *)
+## Useful to set version of Java Runtime for Burp Suite
 package          = "aur/archlinux-java-run"
 description      = "Java Application Launcher for Arch Linux."
 url              = "https://github.com/michaellass/archlinux-java-run"
-notes            = "Useful to set version of Java Runtime for Burp Suite."
 
 # [pkg.arch-wiki-docs]
+## (* notes * )
+## Do something to open in fzf.
 # repository       = "community/arch-wiki-docs"
 # description      = "Pages from Arch Wiki optimized for offline browsing"
 # url              = "https://github.com/lahwaacz/arch-wiki-docs"
@@ -45,20 +53,14 @@ description      = "Programmable completion for the bash shell"
 url              = "https://github.com/scop/bash-completion"
 
 [pkg.bat]
-package     = "community/bat"
-description = "Cat clone with syntax highlighting and git integration"
-url         = "https://github.com/sharkdp/bat"
-man         = ['bat(1)']
-mode        = ['testing']
+package          = "community/bat"
+description      = "Cat clone with syntax highlighting and git integration"
+url              = "https://github.com/sharkdp/bat"
 
 [pkg.bc]
-package     = "extra/bc"
-description = "An arbitrary precision calculator language"
-url         = "https://www.gnu.org/software/bc/"
-info        = ['bc', 'dc']
-man         = ['bc(1)',
-               'dc(1)']
-mode        = ['ael-base']
+package          = "extra/bc"
+description      = "An arbitrary precision calculator language"
+url              = "https://www.gnu.org/software/bc/"
 
 [pkg.bind]
 ## (* provides *)
@@ -98,12 +100,9 @@ description      = "A complete, highly portable implementation of the DNS protoc
 url              = "https://www.isc.org/software/bind/"
 
 [pkg.binwalk]
-package     = "community/binwalk"
-description = "Tool for searching a given binary image for embedded files"
-url         = "https://github.com/ReFirmLabs/binwalk"
-help        = true
-language    = "python"
-mode        = ['hacker']
+package          = "community/binwalk"
+description      = "Tool for searching a given binary image for embedded files"
+url              = "https://github.com/ReFirmLabs/binwalk"
 
 [pkg.bleachbit]
 package          = "community/bleachbit"
@@ -111,45 +110,34 @@ description      = "Deletes unneeded files to free disk space and maintain priva
 url              = "https://www.bleachbit.org/"
 
 [pkg.blueman]
-package     = "community/blueman"
-description = "GTK+ Bluetooth Manager"
-url         = "https://github.com/blueman-project/blueman"
-mode        = ["desktop"]
+package          = "community/blueman"
+description      = "GTK+ Bluetooth Manager"
+url              = "https://github.com/blueman-project/blueman"
 
 [pkg.bluez]
-package     = "extra/bluez"
-description = "Daemons for the bluetooth protocol stack"
-url         = "http://www.bluez.org/"
-mode        = ["ael-base"]
+package          = "extra/bluez"
+description      = "Daemons for the bluetooth protocol stack"
+url              = "http://www.bluez.org/"
 
 [pkg.bluez-utils]
-package     = "extra/bluez-utils"
-description = "Development and debugging utilities for the bluetooth protocol stack"
-url         = "http://www.bluez.org/"
+package          = "extra/bluez-utils"
+description      = "Development and debugging utilities for the bluetooth protocol stack"
+url              = "http://www.bluez.org/"
 
 [pkg.bmon]
-package     = "community/bmon"
-description = "Portable bandwidth monitor and rate estimator"
-url         = "https://github.com/tgraf/bmon/"
-help        = true
-man         = ['bmon(8)']
-category    = ['TUI']
-mode        = ["testing"]
+package          = "community/bmon"
+description      = "Portable bandwidth monitor and rate estimator"
+url              = "https://github.com/tgraf/bmon/"
 
 [pkg.bpytop]
-package     = "community/bpytop"
-description = "Resource monitor that shows usage and stats for processor, memory, disks, network and processes"
-url         = "https://github.com/aristocratos/bpytop"
-help        = true
-category    = ['Process', 'System']
-language    = "python"
-mode        = ['desktop', 'hacker']
+package          = "community/bpytop"
+description      = "Resource monitor that shows usage and stats for processor, memory, disks, network and processes"
+url              = "https://github.com/aristocratos/bpytop"
 
 [pkg.brasero]
-package     = "extra/brasero"
-description = "CD/DVD mastering tool"
-url         = "https://wiki.gnome.org/Apps/Brasero"
-mode        = ['testing']
+package          = "extra/brasero"
+description      = "CD/DVD mastering tool"
+url              = "https://wiki.gnome.org/Apps/Brasero"
 
 [pkg.brave]
 package          = "aur/brave-bin"
@@ -158,30 +146,23 @@ url              = "https://brave.com"
 url_aur          = "https://aur.archlinux.org/packages/brave-bin"
 
 [pkg.brightnessctl]
-package     = "community/brightnessctl"
-description = "Lightweight brightness control tool"
-url         = "https://github.com/Hummer12007/brightnessctl"
-help        = true
-man         = ['brightnessctl(1)']
-category    = ['Display', 'System']
-language    = "C"
-mode        = ['ael-base']
+package          = "community/brightnessctl"
+description      = "Lightweight brightness control tool"
+url              = "https://github.com/Hummer12007/brightnessctl"
 
 [pkg.bumblebee-status]
-package     = "aur/bumblebee-status-git"
-description = "Modular, theme-able status line generator for the i3 window manager"
-url         = "https://github.com/tobi-wan-kenobi/bumblebee-status"
-url_aur     = "https://aur.archlinux.org/packages/bumblebee-status-git"
-help        = true
-language    = "python"
-mode        = ['desktop', 'hacker']
+package          = "aur/bumblebee-status-git"
+description      = "Modular, theme-able status line generator for the i3 window manager"
+url              = "https://github.com/tobi-wan-kenobi/bumblebee-status"
+url_aur          = "https://aur.archlinux.org/packages/bumblebee-status-git"
 
 [pkg.burpsuite]
+## (* notes *)
+## Requires java-openjdk to be set as default.
 package          = "aur/burpsuite"
 description      = "An integrated platform for performing security testing of web applications (free edition)"
 url              = "https://portswigger.net/burp/"
 url_aur          = "https://aur.archlinux.org/packages/burpsuite"
-notes            = "Requires java-openjdk to be set as default."
 
 [pkg.caja]
 package     = "community/caja"
@@ -387,12 +368,15 @@ description      = "Free implementation of the Remote Desktop Protocol (RDP)"
 url              = "https://www.freerdp.com/"
 
 [pkg.fzf]
+## (* notes *)
+## read https://seb.jambor.dev/posts/improving-shell-workflows-with-fzf/
+## (* provides *)
+## /usr/bin/fzf
+## /usr/bin/fzf-tmux
+## /usr/share/vim/vimfiles/plugin/fzf.vim
 package          = "community/fzf"
 description      = "Command-line fuzzy finder"
 url              = "https://github.com/junegunn/fzf"
-provide          = ["/usr/bin/fzf",
-                    "/usr/bin/fzf-tmux",
-                    "/usr/share/vim/vimfiles/plugin/fzf.vim"]
 
 [pkg.gimp]
 package          = "extra/gimp"
