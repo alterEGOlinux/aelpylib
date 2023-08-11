@@ -164,12 +164,10 @@ description      = "An integrated platform for performing security testing of we
 url              = "https://portswigger.net/burp/"
 url_aur          = "https://aur.archlinux.org/packages/burpsuite"
 
-[pkg.caja]
-package     = "community/caja"
-description = "File manager for the MATE desktop"
-url         = "https://mate-desktop.org"
-categories  = ['File Manager', 'GUI']
-mode        = ['testing']
+# [pkg.caja]
+# package          = "community/caja"
+# description      = "File manager for the MATE desktop"
+# url              = "https://mate-desktop.org"
 
 [pkg.cmatrix]
 package          = "community/cmatrix"
@@ -177,28 +175,20 @@ description      = "A curses-based scrolling 'Matrix'-like screen"
 url              = "https://www.asty.org/cmatrix/"
 
 [pkg.code]
-package     = "community/code"
-description = "The Open Source build of Visual Studio Code (vscode) editor"
-url         = "https://github.com/microsoft/vscode"
-help        = true
-desktop     = "/usr/share/applications/code-oss.desktop"
-mode        = ['desktop', 'hacker']
+package          = "community/code"
+description      = "The Open Source build of Visual Studio Code (vscode) editor"
+url              = "https://github.com/microsoft/vscode"
 
 [pkg.cronie]
-package     = "core/cronie"
-description = "Daemon that runs specified programs at scheduled times and related tools"
-url         = "https://github.com/cronie-crond/cronie/"
-provides    = ['/usr/bin/crontab']
-man         = ['contrab(1)', 'crontab(5)', 'cron(8)']
-mode        = ['ael-base']
+package          = "core/cronie"
+description      = "Daemon that runs specified programs at scheduled times and related tools"
+url              = "https://github.com/cronie-crond/cronie/"
 
 [pkg.crunch]
-package     = "aur/crunch"
-description = "A wordlist generator where you can specify a standard character set or a character set you specify and generate all possible combinations and permutations."
-url         = "http://sourceforge.net/projects/crunch-wordlist/"
-url_aur     = "https://aur.archlinux.org/packages/crunch"
-man         = ['crunch(1)']
-mode        = ['hacker']
+package          = "aur/crunch"
+description      = "A wordlist generator where you can specify a standard character set or a character set you specify and generate all possible combinations and permutations."
+url              = "http://sourceforge.net/projects/crunch-wordlist/"
+url_aur          = "https://aur.archlinux.org/packages/crunch"
 
 [pkg.curl]
 package          = "core/curl"
@@ -206,12 +196,9 @@ description      = "Command line tool and library for transferring data with URL
 url              = "https://curl.se/"
 
 [pkg.curlftpfs]
-package     = "community/curlftpfs"
-description = "A filesystem for acessing FTP hosts based on FUSE and libcurl."
-url         = "http://curlftpfs.sourceforge.net/"
-provides    = ["curlftpfs"]
-man         = ["curlftpfs(1)"]
-mode        = ["testing"]
+package          = "community/curlftpfs"
+description      = "A filesystem for acessing FTP hosts based on FUSE and libcurl."
+url              = "http://curlftpfs.sourceforge.net/"
 
 [pkg.dcmtk]
 package     = "aur/dcmtk-git"
