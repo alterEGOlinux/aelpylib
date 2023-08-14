@@ -201,20 +201,97 @@ description      = "A filesystem for acessing FTP hosts based on FUSE and libcur
 url              = "http://curlftpfs.sourceforge.net/"
 
 [pkg.dcmtk]
-package     = "aur/dcmtk-git"
-description = "Collection of libraries and applications implementing large parts the DICOM standard"
-url         = "http://dicom.offis.de/dcmtk"
-aur_url     = "https://aur.archlinux.org/packages/dcmtk-git"
-mode        = ['testing']
+## (* provides *)
+## /usr/bin/cda2dcm
+## /usr/bin/dcm2json
+## /usr/bin/dcm2pdf
+## /usr/bin/dcm2pnm
+## /usr/bin/dcm2xml
+## /usr/bin/dcmcjpeg
+## /usr/bin/dcmcjpls
+## /usr/bin/dcmconv
+## /usr/bin/dcmcrle
+## /usr/bin/dcmdata_tests
+## /usr/bin/dcmdjpeg
+## /usr/bin/dcmdjpls
+## /usr/bin/dcmdrle
+## /usr/bin/dcmdspfn
+## /usr/bin/dcmdump
+## /usr/bin/dcmect_tests
+## /usr/bin/dcmfg_tests
+## /usr/bin/dcmftest
+## /usr/bin/dcmgpdir
+## /usr/bin/dcmicmp
+## /usr/bin/dcmiod_tests
+## /usr/bin/dcmj2pnm
+## /usr/bin/dcml2pnm
+## /usr/bin/dcmmkcrv
+## /usr/bin/dcmmkdir
+## /usr/bin/dcmmklut
+## /usr/bin/dcmnet_tests
+## /usr/bin/dcmodify
+## /usr/bin/dcmp2pgm
+## /usr/bin/dcmprscp
+## /usr/bin/dcmprscu
+## /usr/bin/dcmpschk
+## /usr/bin/dcmpsmk
+## /usr/bin/dcmpsprt
+## /usr/bin/dcmpsrcv
+## /usr/bin/dcmpssnd
+## /usr/bin/dcmqridx
+## /usr/bin/dcmqrscp
+## /usr/bin/dcmqrti
+## /usr/bin/dcmquant
+## /usr/bin/dcmrecv
+## /usr/bin/dcmrt_tests
+## /usr/bin/dcmscale
+## /usr/bin/dcmseg_tests
+## /usr/bin/dcmsend
+## /usr/bin/dcmsign
+## /usr/bin/dcmsr_tests
+## /usr/bin/dcmtls_tests
+## /usr/bin/dcod2lum
+## /usr/bin/dconvlum
+## /usr/bin/drtdump
+## /usr/bin/drttest
+## /usr/bin/dsr2html
+## /usr/bin/dsr2xml
+## /usr/bin/dsrdump
+## /usr/bin/dump2dcm
+## /usr/bin/echoscu
+## /usr/bin/findscu
+## /usr/bin/getscu
+## /usr/bin/img2dcm
+## /usr/bin/mkcsmapper
+## /usr/bin/mkesdb
+## /usr/bin/mkreport
+## /usr/bin/movescu
+## /usr/bin/msgserv
+## /usr/bin/oficonv_tests
+## /usr/bin/ofstd_tests
+## /usr/bin/pdf2dcm
+## /usr/bin/stl2dcm
+## /usr/bin/storescp
+## /usr/bin/storescu
+## /usr/bin/termscu
+## /usr/bin/wlmscpfs
+## /usr/bin/wltest
+## /usr/bin/xml2dcm
+## /usr/bin/xml2dsr
+package          = "aur/dcmtk-git"
+description      = "Collection of libraries and applications implementing large parts the DICOM standard"
+url              = "http://dicom.offis.de/dcmtk"
+aur_url          = "https://aur.archlinux.org/packages/dcmtk-git"
 
 [pkg.dex]
-package     = "community/dex"
-description = "Program to generate and execute DesktopEntry files of type Application"
-url         = "https://github.com/jceb/dex"
-man         = ['dex(1)']
-mode        = ['testing']
+package          = "community/dex"
+description      = "Program to generate and execute DesktopEntry files of type Application"
+url              = "https://github.com/jceb/dex"
 
 [pkg.dialog]
+package          = "core/dialog"
+description      = "A tool to display dialog boxes from shell scripts."
+url              = "https://invisible-island.net/dialog/"
 
 [pkg.dirbuster]
 ## (* provides *)
@@ -235,56 +312,52 @@ url              = "http://www.owasp.org/index.php/Category:OWASP_DirBuster_Proj
 url_aur          = "https://aur.archlinux.org/packages/dirbuster"
 
 [pkg.dmg2img]
-package     = "community/dmg2img"
-description = "A CLI tool to uncompress Apple's compressed DMG files to the HFS+ IMG format"
-url         = "http://vu1tur.eu.org/tools/"
-mode        = ['ael-base']
+package          = "community/dmg2img"
+description      = "A CLI tool to uncompress Apple's compressed DMG files to the HFS+ IMG format"
+url              = "http://vu1tur.eu.org/tools/"
 
 [pkg.docker]
-package     = "community/docker"
-description = "Pack, ship and run any application as a lightweight container."
-url         = "https://www.docker.com/"
-provides    = ["/usr/bin/docker",
-               "/usr/bin/docker-init",
-               "/usr/bin/docker-proxy",
-               "/usr/bin/dockerd",
-               "/usr/lib/systemd/system/docker.service",
-               "/usr/lib/systemd/system/docker.socket"]
-man         = ["docker(1)", "dockerd(8)", "Dockerfile(5)", "..."]
-mode        = ["basic", "desktop", "hacker"]
-notes       = """
-              - View ~/.ael/.container for available docker containers and functions.
-              """
+## (* provides *)
+## /usr/bin/docker
+## /usr/bin/docker-init
+## /usr/bin/docker-proxy
+## /usr/bin/dockerd
+## /usr/lib/systemd/system/docker.service
+## /usr/lib/systemd/system/docker.socket
+package          = "community/docker"
+description      = "Pack, ship and run any application as a lightweight container."
+url              = "https://www.docker.com/"
+
+[pkg.domination]
+package          = "aur/domination"
+description      = "A Java version of the classic Risk board game."
+url              = "http://domination.sourceforge.net/"
+url_aur          = "https://aur.archlinux.org/packages/domination"
 
 [pkg.dos2unix]
-package     = "community/dos2unix"
-description = "Converts DOS/Windows and MAC OS text files format to Unix, especially line breaks."
-url         = "https://waterlan.home.xs4all.nl/dos2unix.html"
-provides    = ["/usr/bin/dos2unix",
-               "/usr/bin/mac2unix",
-               "/usr/bin/unix2dos",
-               "/usr/bin/unix2mac"]
-man         = ["dos2unix(1)", "..."]
-mode        = ["ael-base"]
+## (* provides )
+## /usr/bin/dos2unix
+## /usr/bin/mac2unix
+## /usr/bin/unix2dos
+## /usr/bin/unix2mac
+package          = "community/dos2unix"
+description      = "Converts DOS/Windows and MAC OS text files format to Unix, especially line breaks."
+url              = "https://waterlan.home.xs4all.nl/dos2unix.html"
 
 [pkg.dosfstools]
-package     = "core/dosfstools"
-description = "DOS filesystem utilities"
-url         = "https://github.com/dosfstools/dosfstools"
-mode        = ['testing']
+package          = "core/dosfstools"
+description      = "DOS filesystem utilities"
+url              = "https://github.com/dosfstools/dosfstools"
 
-[pkg.doublecmd]
-package     = "community/doublecmd-qt5"
-description = "twin-panel (commander-style) file manager (Qt5)"
-url         = "http://doublecmd.sourceforge.net/"
-mode        = ['testing']
+# [pkg.doublecmd]
+# package          = "community/doublecmd-qt5"
+# description      = "twin-panel (commander-style) file manager (Qt5)"
+# url              = "http://doublecmd.sourceforge.net/"
 
 [pkg.dunst]
-package     = "community/dunst"
-description = "Customizable and lightweight notification-daemon."
-url         = "https://dunst-project.org/"
-man         = ["dunst(1)"]
-mode        = ["desktop", "hacker"]
+package          = "community/dunst"
+description      = "Customizable and lightweight notification-daemon."
+url              = "https://dunst-project.org/"
 
 [pkg.easy-rsa]
 package     = "extra/easy-rsa"
