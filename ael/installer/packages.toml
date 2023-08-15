@@ -360,62 +360,55 @@ description      = "Customizable and lightweight notification-daemon."
 url              = "https://dunst-project.org/"
 
 [pkg.easy-rsa]
-package     = "extra/easy-rsa"
-description = "Simple shell based CA utility"
-url         = "https://github.com/OpenVPN/easy-rsa"
-provides    = ["easyrsa"]
-mode        = ["ael-base"]
+package          = "extra/easy-rsa"
+description      = "Simple shell based CA utility"
+url              = "https://github.com/OpenVPN/easy-rsa"
 
-[pkg.efibootmgr]
+# [pkg.efibootmgr]
 
 [pkg.entr]
-package     = "community/entr"
-description = "Run arbitrary commands when files change"
-url         = "http://eradman.com/entrproject"
-man         = ["entr(1)"]
-mode        = ["testing"]
+package          = "community/entr"
+description      = "Run arbitrary commands when files change"
+url              = "http://eradman.com/entrproject"
 
 [pkg.exa]
-package     = "community/exa"
-description = "ls replacement"
-url         = "https://the.exa.website/"
-mode        = ['testing']
+package          = "community/exa"
+description      = "ls replacement"
+url              = "https://the.exa.website/"
 
 [pkg.exfat-utils]
-package     = "community/exfat-utils"
-description = "Utilities for exFAT file system"
-url         = "https://github.com/relan/exfat"
-provides    = ["/usr/bin/dumpexfat",
-               "/usr/bin/exfatfsck",
-               "/usr/bin/exfatlabel",
-               "/usr/bin/fsck.exfat",
-               "/usr/bin/mkexfatfs",
-               "/usr/bin/mkfs.exfat",
-               "/usr/bin/mount.exfat",
-               "/usr/bin/mount.exfat-fuse"]
-man         = ["dumpexfat(8)",
-               "exfatfsck(8)",
-               "exfatlabel(8)",
-               "mkexfatfs(8)",
-               "mount.exfat-fuse(8)"]
-mode        = ["ael-base"]
+## (* provides *)
+## /usr/bin/dumpexfat
+## /usr/bin/exfatfsck
+## /usr/bin/exfatlabel
+## /usr/bin/fsck.exfat
+## /usr/bin/mkexfatfs
+## /usr/bin/mkfs.exfat
+## /usr/bin/mount.exfat
+## /usr/bin/mount.exfat-fuse
+## (* info *)
+## dumpexfat(8)
+## exfatfsck(8)
+## exfatlabel(8)
+## mkexfatfs(8)
+## mount.exfat-fuse(8)
+package          = "community/exfat-utils"
+description      = "Utilities for exFAT file system"
+url              = "https://github.com/relan/exfat"
 
 [pkg.exploitdb]
-package     = "community/exploitdb"
-description = "Offensive Security’s Exploit Database Archive"
-url         = "https://www.exploit-db.com/"
-provides    = ['/usr/bin/searchsploit']
-mode        = ['hacker']
-
-[pkg.feh]
-# Replaced by nitrogen
+## (* provides *)
+## /usr/bin/searchsploit
+package          = "community/exploitdb"
+description      = "Offensive Security’s Exploit Database Archive"
+url              = "https://www.exploit-db.com/"
 
 [pkg.ffmpeg]
-package     = "extra/ffmpeg"
-description = "Complete solution to record, convert and stream audio and video"
-url         = "https://ffmpeg.org/"
-man         = ["ffmpeg(1)"]
-mode        = ["ael-base"]
+## (* info *)
+## ffmpeg(1)
+package          = "extra/ffmpeg"
+description      = "Complete solution to record, convert and stream audio and video"
+url              = "https://ffmpeg.org/"
 
 [pkg.firefox]
 package          = "extra/firefox"
@@ -444,28 +437,26 @@ description      = "GNU Image Manipulation Program"
 url              = "https://www.gimp.org/"
 
 [pkg.git]
-package     = "extra/git"
-description = "The fast distributed version control system"
-url         = "https://git-scm.com/"
-mode        = ["ael-base"]
+package          = "extra/git"
+description      = "The fast distributed version control system"
+url              = "https://git-scm.com/"
 
 [pkg.glow]
-package     = "community/glow"
-description = "Command-line markdown renderer"
-url         = "https://github.com/charmbracelet/glow"
-mode        = ["ael-base"]
+package          = "community/glow"
+description      = "Command-line markdown renderer"
+url              = "https://github.com/charmbracelet/glow"
+
+# [gnome-characters]
 
 [pkg.go]
-package     = "community/go"
-description = "Core compiler tools for the Go programming language"
-url         = "https://golang.org/"
-mode        = ["ael-base"]
+package          = "community/go"
+description      = "Core compiler tools for the Go programming language"
+url              = "https://golang.org/"
 
-[pkg.go-to-meeting]
-package     = "aur/go-to-meeting-nativefier"
-description = "GoToMeeting desktop built with nativefier (electron)"
-aur_url     = "https://aur.archlinux.org/packages/go-to-meeting-nativefier"
-mode        = ["testing"]
+# [pkg.go-to-meeting]
+# package          = "aur/go-to-meeting-nativefier"
+# description      = "GoToMeeting desktop built with nativefier (electron)"
+# aur_url          = "https://aur.archlinux.org/packages/go-to-meeting-nativefier"
 
 [pkg.gobuster]
 package          = "aur/gobuster-git"
@@ -474,35 +465,51 @@ url              = "https://github.com/OJ/gobuster"
 url_aur          = "https://aur.archlinux.org/packages/gobuster-git"
 
 [pkg.gping]
-package     = "community/gping"
-description = "Ping, but with a graph"
-url         = "https://github.com/orf/gping"
-mode        = ["ael-base"]
+package          = "community/gping"
+description      = "Ping, but with a graph"
+url              = "https://github.com/orf/gping"
 
 [pkg.grc]
-package     = "community/grc"
-description = "Yet another colouriser for beautifying your logfiles or output of commands"
-url         = "https://github.com/garabik/grc"
-mode        = ["ael-base"]
+package          = "community/grc"
+description      = "Yet another colouriser for beautifying your logfiles or output of commands"
+url              = "https://github.com/garabik/grc"
 
 [pkg.gromit-mpx]
-package     = "aur/gromit-mpx-git"
-description = "Desktop annotation tool. GTK3 multi-pointer variant of original gromit utility."
-url         = "https://github.com/bk138/gromit-mpx"
-url_aur     = "https://aur.archlinux.org/packages/gromit-mpx-git"
-mode        = ["desktop"]
+package          = "aur/gromit-mpx-git"
+description      = "Desktop annotation tool. GTK3 multi-pointer variant of original gromit utility."
+url              = "https://github.com/bk138/gromit-mpx"
+url_aur          = "https://aur.archlinux.org/packages/gromit-mpx-git"
 
 [pkg.grub]
-package     = "core/grub"
-description = "GNU GRand Unified Bootloader (2)"
-url         = "https://www.gnu.org/software/grub/"
-mode        = ["ael-base"]
+package          = "core/grub"
+description      = "GNU GRand Unified Bootloader (2)"
+url              = "https://www.gnu.org/software/grub/"
+
+# [pkg.gscan2pdf]
+# package          = "extra/gscan2pdf"
+# description      = "A GUI with OCR capability to produce PDFs or DjVus from scanned documents."
+# url              = "http://gscan2pdf.sourceforge.net/"
+
+# [pkg.gucharmap]
+# package          = "extra/gucharmap"
+# description      = "Gnome Unicode Charmap."
+# url              = "https://wiki.gnome.org/Apps/Gucharmap"
 
 [pkg.gunicorn]
-package     = "community/gunicorn"
-description = "WSGI HTTP Server for UNIX"
-url         = "https://gunicorn.org/"
-mode        = ["server"]
+package          = "community/gunicorn"
+description      = "WSGI HTTP Server for UNIX"
+url              = "https://gunicorn.org/"
+
+[pkg.gvfs]
+package          = "extra/gvfs"
+description      = "Virtual filesystem implementation for GIO."
+url              = "https://wiki.gnome.org/Projects/gvfs"
+
+[pkg.htmlq]
+package          = "aur/htmlq-git"
+description      = "Like jq, but for HTML"
+url              = "https://github.com/mgdm/htmlq"
+url_aur          = "https://aur.archlinux.org/packages/htmlq-git"
 
 [pkg.htop]
 package          = "extra/htop"
@@ -510,10 +517,9 @@ description      = "Interactive process viewer"
 url              = "https://htop.dev/"
 
 [pkg.hydra]
-package     = "community/hydra"
-description = "Very fast network logon cracker which support many different services"
-url         = "https://github.com/vanhauser-thc/thc-hydra"
-mode        = ["hacker"]
+package          = "community/hydra"
+description      = "Very fast network logon cracker which support many different services"
+url              = "https://github.com/vanhauser-thc/thc-hydra"
 
 [pkg.i3-wm]
 package          = "community/i3-wm"
