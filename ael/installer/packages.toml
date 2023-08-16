@@ -822,43 +822,40 @@ url              = "http://projects.l3ib.org/nitrogen/"
 ## /usr/bin/ncat
 ## /usr/bin/nmap
 ## /usr/bin/nping
-package     = "extra/nmap"
-description = "Utility for network discovery and security auditing"
-url         = "https://nmap.org/"
+package          = "extra/nmap"
+description      = "Utility for network discovery and security auditing"
+url              = "https://nmap.org/"
 
 [pkg.nmon]
-package     = "community/nmon"
-description = "AIX & Linux Performance Monitoring tool"
-url         = "http://nmon.sourceforge.net"
-categories  = ["TUI", "Monitoring", "System"]
-mode        = ["ael-base"]
+package          = "community/nmon"
+description      = "AIX & Linux Performance Monitoring tool"
+url              = "http://nmon.sourceforge.net"
 
 [pkg.nomacs]
-package     = "aur/nomacs"
-description = "A Qt image viewer"
-url         = "https://nomacs.org/"
-aur_url     = "https://aur.archlinux.org/packages/nomacs"
-mode        = ["testing"]
+package          = "aur/nomacs"
+description      = "A Qt image viewer"
+url              = "https://nomacs.org/"
+aur_url          = "https://aur.archlinux.org/packages/nomacs"
 
 [pkg.nordvpn]
-package     = "aur/nordvpn-bin"
-description = "NordVPN CLI tool for Linux"
-url         = "https://nordvpn.com/download/linux/"
-aur_url     = "https://aur.archlinux.org/packages/nordvpn-bin"
-categories  = ["vpn"]
-mode        = ["testing"]
+package          = "aur/nordvpn-bin"
+description      = "NordVPN CLI tool for Linux"
+url              = "https://nordvpn.com/download/linux/"
+aur_url          = "https://aur.archlinux.org/packages/nordvpn-bin"
+
+# [noto-fonts-emoji]
 
 [pkg.ntfs-3g]
-package     = "extra/ntfs-3g"
-description = "NTFS filesystem driver and utilities"
-url         = "https://www.tuxera.com/community/open-source-ntfs-3g/"
-mode        = ["ael-base"]
+package          = "extra/ntfs-3g"
+description      = "NTFS filesystem driver and utilities"
+url              = "https://www.tuxera.com/community/open-source-ntfs-3g/"
+
+# [nushell]
 
 [pkg.obs-studio]
-package     = "community/obs-studio"
-description = "Free, open source software for live streaming and recording"
-url         = "https://obsproject.com"
-mode        = ["testing"]
+package          = "community/obs-studio"
+description      = "Free, open source software for live streaming and recording"
+url              = "https://obsproject.com"
 
 [pkg.openssh]
 package     = "core/openssh"
