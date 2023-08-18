@@ -2,7 +2,7 @@
 ## [packages.toml]
 ## author        = "fantomH @alterEGO Linux"
 ## created       = 2023-08-09 02:19:15 UTC
-## updated       = 2023-08-09 02:19:15 UTC
+## updated       = 2023-08-17 12:23:12 UTC
 ## description   = "alterEGO Linux packages."
 
 [pkg.alacritty]
@@ -446,8 +446,6 @@ package          = "community/glow"
 description      = "Command-line markdown renderer"
 url              = "https://github.com/charmbracelet/glow"
 
-# [gnome-characters]
-
 [pkg.go]
 package          = "community/go"
 description      = "Core compiler tools for the Go programming language"
@@ -622,9 +620,6 @@ description      = "Command line interface for LibreSpeed speed test backends"
 url              = "https://github.com/librespeed/speedtest-cli"
 url_aur          = "https://aur.archlinux.org/packages/librespeed-cli-bin"
 
-# [libtool]
-# [libvncserver]
-# [libxcrypt-compat]
 
 [pkg.linux]
 package          = "core/linux"
@@ -637,15 +632,10 @@ package          = "core/linux-firmware"
 [pkg.linux-headers]
 package          = "core/linux-headers"
 
-# [lshw]
-# [luit]
-
 [pkg.lxappearance]
 package          = "community/lxappearance"
 description      = "Feature-rich GTK+ theme switcher of the LXDE Desktop"
 url              = "https://wiki.lxde.org/en/LXAppearance"
-
-# [lxc]
 
 [pkg.lynx]
 package          = "extra/lynx"
@@ -843,14 +833,10 @@ description      = "NordVPN CLI tool for Linux"
 url              = "https://nordvpn.com/download/linux/"
 aur_url          = "https://aur.archlinux.org/packages/nordvpn-bin"
 
-# [noto-fonts-emoji]
-
 [pkg.ntfs-3g]
 package          = "extra/ntfs-3g"
 description      = "NTFS filesystem driver and utilities"
 url              = "https://www.tuxera.com/community/open-source-ntfs-3g/"
-
-# [nushell]
 
 [pkg.obs-studio]
 package          = "community/obs-studio"
@@ -858,68 +844,61 @@ description      = "Free, open source software for live streaming and recording"
 url              = "https://obsproject.com"
 
 [pkg.openssh]
-package     = "core/openssh"
-description = "SSH protocol implementation for remote login, command execution and file transfer"
-url         = "https://www.openssh.com/portable.html"
-provide     = ["/etc/ssh/ssh_config",
-               "/etc/ssh/sshd_config",
-               "/usr/bin/scp",
-               "/usr/bin/sftp",
-               "/usr/bin/ssh",
-               "/usr/bin/ssh-add",
-               "/usr/bin/ssh-agent",
-               "/usr/bin/ssh-copy-id",
-               "/usr/bin/ssh-keygen",
-               "/usr/bin/ssh-keyscan",
-               "/usr/bin/sshd"]
-mode        = ["ael-base"]
+## (* provides *)
+## /etc/ssh/ssh_config
+## /etc/ssh/sshd_config
+## /usr/bin/scp
+## /usr/bin/sftp
+## /usr/bin/ssh
+## /usr/bin/ssh-add
+## /usr/bin/ssh-agent
+## /usr/bin/ssh-copy-id
+## /usr/bin/ssh-keygen
+## /usr/bin/ssh-keyscan
+## /usr/bin/sshd
+package          = "core/openssh"
+description      = "SSH protocol implementation for remote login, command execution and file transfer"
+url              = "https://www.openssh.com/portable.html"
 
 [pkg.openvpn]
-package     = "extra/openvpn"
-description = "An easy-to-use, robust and highly configurable VPN (Virtual Private Network)."
-url         = "https://openvpn.net/index.php/open-source.html"
-man         = ["openvpn(8)"]
-categories  = ["vpn"]
-mode        = ["ael-base"]
+## (* info *)
+## openvpn(8)
+package          = "extra/openvpn"
+description      = "An easy-to-use, robust and highly configurable VPN (Virtual Private Network)."
+url              = "https://openvpn.net/index.php/open-source.html"
 
 [pkg.os-prober]
-package     = "community/os-prober"
-description = "Utility to detect other OSes on a set of drives"
-url         = "https://joeyh.name/code/os-prober/"
-mode        = ["ael-base"]
+package          = "community/os-prober"
+description      = "Utility to detect other OSes on a set of drives"
+url              = "https://joeyh.name/code/os-prober/"
 
 [pkg.p7zip]
-package     = "extra/p7zip"
-description = "Command-line file archiver with high compression ratio"
-url         = "https://github.com/jinfeihan57/p7zip"
-mode        = ["ael-base"]
+package          = "extra/p7zip"
+description      = "Command-line file archiver with high compression ratio"
+url              = "https://github.com/jinfeihan57/p7zip"
 
 [pkg.pacman-contrib]
-package     = "community/pacman-contrib"
-description = "Contributed scripts and tools for pacman systems"
-url         = "https://gitlab.archlinux.org/pacman/pacman-contrib"
-mode        = "ael-base"
+package          = "community/pacman-contrib"
+description      = "Contributed scripts and tools for pacman systems"
+url              = "https://gitlab.archlinux.org/pacman/pacman-contrib"
 
-[pkg.pamac-aur]
-package     = "aur/pamac-aur"
-description = "A Gtk3 frontend, Package Manager based on libalpm with AUR and Appstream support"
-url         = "https://gitlab.manjaro.org/applications/pamac"
-aur_url     = "https://aur.archlinux.org/packages/pamac-aur"
-mode        = ["testing"]
+# [pkg.pamac-aur]
+# package          = "aur/pamac-aur"
+# description      = "A Gtk3 frontend, Package Manager based on libalpm with AUR and Appstream support"
+# url              = "https://gitlab.manjaro.org/applications/pamac"
+# aur_url          = "https://aur.archlinux.org/packages/pamac-aur"
 
 [pkg.pandoc]
-package     = "aur/pandoc-bin"
-description = "Conversion between markup formats"
-url         = "https://pandoc.org"
-url_aur     = "https://aur.archlinux.org/packages/pandoc-bin"
-mode        = ["ael-base"]
+package          = "aur/pandoc-bin"
+description      = "Conversion between markup formats"
+url              = "https://pandoc.org"
+url_aur          = "https://aur.archlinux.org/packages/pandoc-bin"
 
 [pkg.paru]
-package     = "aur/paru"
-description = "Feature packed AUR helper"
-url         = "https://github.com/morganamilo/paru"
-aur_url     = "https://aur.archlinux.org/packages/paru"
-mode        = ["ael-base"]
+package          = "aur/paru"
+description      = "Feature packed AUR helper"
+url              = "https://github.com/morganamilo/paru"
+aur_url          = "https://aur.archlinux.org/packages/paru"
 
 [pkg.pasystray]
 package          = "community/pasystray"
@@ -932,80 +911,71 @@ description      = "PulseAudio Volume Control"
 url              = "https://freedesktop.org/software/pulseaudio/pavucontrol/"
 
 [pkg.perl-image-exiftool]
-package     = "extra/perl-image-exiftool"
-description = "Reader and rewriter of EXIF informations that supports raw files"
-url         = "https://search.cpan.org/perldoc?exiftool"
-mode        = ["ael-base"]
+package          = "extra/perl-image-exiftool"
+description      = "Reader and rewriter of EXIF informations that supports raw files"
+url              = "https://search.cpan.org/perldoc?exiftool"
 
 [pkg.php]
-package     = "extra/php"
-description = "A general-purpose scripting language that is especially suited to web development"
-url         = "https://www.php.net/"
-mode        = ["ael-base"]
+package          = "extra/php"
+description      = "A general-purpose scripting language that is especially suited to web development"
+url              = "https://www.php.net/"
 
 [pkg.pipdeptree]
-package     = "aur/pipdeptree"
-description = "Command line utility to show dependency tree of Python packages"
-url         = "https://github.com/naiquevin/pipdeptree"
-aur_url     = "https://aur.archlinux.org/packages/pipdeptree"
-mode        = ["testing"]
+package          = "aur/pipdeptree"
+description      = "Command line utility to show dependency tree of Python packages"
+url              = "https://github.com/naiquevin/pipdeptree"
+aur_url          = "https://aur.archlinux.org/packages/pipdeptree"
 
 [pkg.polenum]
-package     = "aur/polenum"
-description = "A python script to extract the password policy information from a windows machine."
-url         = "https://github.com/Wh1t3Fox/polenum"
-aur_url     = "https://aur.archlinux.org/packages/polenum"
-mode        = ["testing"]
+package          = "aur/polenum"
+description      = "A python script to extract the password policy information from a windows machine."
+url              = "https://github.com/Wh1t3Fox/polenum"
+aur_url          = "https://aur.archlinux.org/packages/polenum"
 
 [pkg.polkit-gnome]
-package     = "community/polkit-gnome"
-description = "Legacy polkit authentication agent for GNOME"
-url         = "https://gitlab.gnome.org/Archive/policykit-gnome"
-mode        = ["ael-base"]
+package          = "community/polkit-gnome"
+description      = "Legacy polkit authentication agent for GNOME"
+url              = "https://gitlab.gnome.org/Archive/policykit-gnome"
 
 [pkg.poppler]
-package     = "extra/poppler"
-description = "PDF rendering library based on xpdf 3.0"
-url         = "https://poppler.freedesktop.org/"
-provide     = ["/usr/bin/pdfattach",
-               "/usr/bin/pdfdetach",
-               "/usr/bin/pdffonts",
-               "/usr/bin/pdfimages",
-               "/usr/bin/pdfinfo",
-               "/usr/bin/pdfseparate",
-               "/usr/bin/pdfsig",
-               "/usr/bin/pdftocairo",
-               "/usr/bin/pdftohtml",
-               "/usr/bin/pdftoppm",
-               "/usr/bin/pdftops",
-               "/usr/bin/pdftotext",
-               "/usr/bin/pdfunite"]
-mode        = ["ael-base"]
+## (* provides *)
+## /usr/bin/pdfattach
+## /usr/bin/pdfdetach
+## /usr/bin/pdffonts
+## /usr/bin/pdfimages
+## /usr/bin/pdfinfo
+## /usr/bin/pdfseparate
+## /usr/bin/pdfsig
+## /usr/bin/pdftocairo
+## /usr/bin/pdftohtml
+## /usr/bin/pdftoppm
+## /usr/bin/pdftops
+## /usr/bin/pdftotext
+## /usr/bin/pdfunite
+package          = "extra/poppler"
+description      = "PDF rendering library based on xpdf 3.0"
+url              = "https://poppler.freedesktop.org/"
 
 [pkg.postgresql]
-package     = "extra/postgresql"
-description = "Sophisticated object-relational DBMS"
-url         = "https://www.postgresql.org/"
-mode        = ["server"]
+package          = "extra/postgresql"
+description      = "Sophisticated object-relational DBMS"
+url              = "https://www.postgresql.org/"
 
 [pkg.powershell]
-package     = "aur/powershell-bin"
-description = "A cross-platform automation and configuration tool/framework (binary package)"
-url         = "https://github.com/Powershell/Powershell"
-url_aur     = "https://aur.archlinux.org/packages/powershell-bin"
-mode        = ["ael-base"]
+package          = "aur/powershell-bin"
+description      = "A cross-platform automation and configuration tool/framework (binary package)"
+url              = "https://github.com/Powershell/Powershell"
+url_aur          = "https://aur.archlinux.org/packages/powershell-bin"
 
 [pkg.pptpclient]
-category    = "core/pptpclient"
-description = "Client for the proprietary Microsoft Point-to-Point Tunneling Protocol, PPTP."
-url         = "http://pptpclient.sourceforge.net/"
-mode        = ["desktop", "hacker"]
+category         = "core/pptpclient"
+description      = "Client for the proprietary Microsoft Point-to-Point Tunneling Protocol, PPTP."
+url              = "http://pptpclient.sourceforge.net/"
 
 [pkg.proxychains]
-package     = "community/proxychains-ng"
-description = "A hook preloader that allows to redirect TCP traffic of existing dynamically linked programs through one or more SOCKS or HTTP proxies."
-url         = "https://github.com/rofl0r/proxychains-ng"
-mode        = ["hacker"]
+package          = "community/proxychains-ng"
+description      = "A hook preloader that allows to redirect TCP traffic of existing dynamically linked programs through one or more SOCKS or HTTP proxies."
+url              = "https://github.com/rofl0r/proxychains-ng"
 
 [pkg.pulseaudio]
 package          = "extra/pulseaudio"
@@ -1018,72 +988,90 @@ description      = "Bluetooth support for PulseAudio"
 url              = "https://www.freedesktop.org/wiki/Software/PulseAudio/"
 
 [pkg.pv]
-package     = "community/pv"
-description = "A terminal-based tool for monitoring the progress of data through a pipeline."
-url         = "http://www.ivarch.com/programs/pv.shtml"
-mode        = ["testing"]
+package          = "community/pv"
+description      = "A terminal-based tool for monitoring the progress of data through a pipeline."
+url              = "http://www.ivarch.com/programs/pv.shtml"
 
 [pkg.python]
-package     = "core/python"
-description = "Next generation of the python high-level scripting language"
-url         = "https://www.python.org/"
-mode        = ["ael-base"]
+package          = "core/python"
+description      = "Next generation of the python high-level scripting language"
+url              = "https://www.python.org/"
 
 [pkg.python-bcrypt]
+package          = "extra/python-bcrypt"
+description      = "Modern password hashing for your software and your servers."
+url              = "https://github.com/pyca/bcrypt"
 
 [pkg.python-beautifulsoup4]
-package     = "community/python-beautifulsoup4"
-description = "A Python HTML/XML parser designed for quick turnaround projects like screen-scraping"
-url         = "https://www.crummy.com/software/BeautifulSoup/index.html"
-mode        = ["ael-base"]
+package          = "community/python-beautifulsoup4"
+description      = "A Python HTML/XML parser designed for quick turnaround projects like screen-scraping"
+url              = "https://www.crummy.com/software/BeautifulSoup/index.html"
 
 [pkg.python-flask]
+package          = "extra/python-flask"
+description      = "Micro webdevelopment framework for Python."
+url              = "http://flask.pocoo.org/"
 
 [pkg.python-flask-sqlalchemy]
+package          = "extra/python-flask-sqlalchemy"
+description      = "Adds SQLAlchemy support to your Flask application."
+url              = "http://flask-sqlalchemy.pocoo.org/"
 
 [pkg.python-flask-wtf]
+package          = "extra/python-flask-wtf"
+description      = "Simple integration of Flask and WTForms."
+url              = "https://flask-wtf.readthedocs.io/"
 
 [pkg.python-markdown]
+package          = "extra/python-markdown"
+description      = "Python implementation of John Gruber's Markdown."
+url              = "https://python-markdown.github.io/"
 
-[pkg.python-openpyxl]
-package     = "community/python-openpyxl"
-description = "A Python library to read/write Excel 2007 xlsx/xlsm files"
-url         = "https://openpyxl.readthedocs.org/"
-mode        = ["testing"]
+# [pkg.python-markdownify]
+# package          = "aur/python-markdownify"
+# description      = "Convert HTML to Markdown."
+# url              = "http://github.com/matthewwithanm/python-markdownify"
+# url_aur          = "https://aur.archlinux.org/packages/python-markdownify"
+
+# [pkg.python-openpyxl]
+# package          = "community/python-openpyxl"
+# description      = "A Python library to read/write Excel 2007 xlsx/xlsm files"
+# url              = "https://openpyxl.readthedocs.org/"
 
 [pkg.python-pandas]
-package     = "community/python-pandas"
-description = "High-performance, easy-to-use data structures and data analysis tools for Python"
-url         = "https://pandas.pydata.org/"
-mode        = ["ael-base"]
+package          = "community/python-pandas"
+description      = "High-performance, easy-to-use data structures and data analysis tools for Python"
+url              = "https://pandas.pydata.org/"
 
 [pkg.python-pip]
-package     = "extra/python-pip"
-description = "The PyPA recommended tool for installing Python packages"
-url         = "https://pip.pypa.io/"
-mode        = ["ael-base"]
+package          = "extra/python-pip"
+description      = "The PyPA recommended tool for installing Python packages"
+url              = "https://pip.pypa.io/"
 
 [pkg.python-pyaml]
-package     = "community/python-pyaml"
-description = "PyYAML-based module to produce pretty and readable YAML-serialized data"
-url         = "https://pypi.python.org/pypi/pyaml"
-mode        = ["ael-base"]
+package          = "community/python-pyaml"
+description      = "PyYAML-based module to produce pretty and readable YAML-serialized data"
+url              = "https://pypi.python.org/pypi/pyaml"
 
 [pkg.python-rich]
-package     = "community/python-rich"
-description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
-url         = "https://github.com/willmcgugan/rich"
-mode        = ["ael-base"]
+package          = "community/python-rich"
+description      = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
+url              = "https://github.com/willmcgugan/rich"
 
 [pkg.python-xlib]
+package          = "extra/python-xlib"
+description      = "A fully functional X client library for Python programs."
+url              = "https://github.com/python-xlib/python-xlib"
 
 [pkg.python-xlrd]
+package          = "extra/python-xlrd"
+description      = "Library for developers to extract data from Excel spreadsheet files."
+url              = "http://www.python-excel.org/"
 
 [pkg.qrencode]
-package     = "extra/qrencode"
-description = "C library for encoding data in a QR Code symbol."
-url         = "https://fukuchi.org/works/qrencode/"
-mode        = ["ael-base"]
+package          = "extra/qrencode"
+description      = "C library for encoding data in a QR Code symbol."
+url              = "https://fukuchi.org/works/qrencode/"
 
 [pkg.qsolocards]
 package          = "aur/qsolocards"
@@ -1091,24 +1079,22 @@ description      = "A free collection of solitaire card games written using Qt"
 url              = "http://sourceforge.net/projects/qsolocards/"
 aur_url          = "https://aur.archlinux.org/packages/qsolocards"
 
-[pkg.qterminal]
-package     = "community/qterminal"
-description = "A lightweight Qt-based terminal emulator"
-url         = "https://github.com/lxqt/qterminal"
-mode        = ["desktop", "hacker"]
+# [pkg.qterminal]
+# package          = "community/qterminal"
+# description      = "A lightweight Qt-based terminal emulator"
+# url              = "https://github.com/lxqt/qterminal"
 
 [pkg.qtile]
-package     = "community/qtile"
-description = "A full-featured, pure-Python tiling window manager"
-url         = "http://www.qtile.org"
-mode        = ["desktop", "hacker"]
+package          = "community/qtile"
+description      = "A full-featured, pure-Python tiling window manager"
+url              = "http://www.qtile.org"
 
 [pkg.ranger]
 package          = "community/ranger"
 description      = "Simple, vim-like file manager"
 url              = "https://ranger.github.io"
 
-[pkg.realvnc-vnc-viewer]
+# [pkg.realvnc-vnc-viewer]
 
 [pkg.remmina]
 ## (* NOTES *)
@@ -1118,153 +1104,167 @@ description      = "remote desktop client written in GTK+"
 url              = "https://www.remmina.org/"
 
 [pkg.rsync]
-package     = "extra/rsync"
-description = "A fast and versatile file copying tool for remote and local files"
-url         = "https://rsync.samba.org/"
-mode        = ["ael-base"]
+package          = "extra/rsync"
+description      = "A fast and versatile file copying tool for remote and local files"
+url              = "https://rsync.samba.org/"
 
 [pkg.rustscan]
-package     = "community/rustscan"
-description = "A modern port scanner"
-url         = "https://github.com/rustscan/RustScan"
-mode        = ["hacker"]
+package          = "community/rustscan"
+description      = "A modern port scanner"
+url              = "https://github.com/rustscan/RustScan"
 
 [pkg.screen]
-package     = "community/screen"
-description = "Full-screen window manager that multiplexes a physical terminal"
-url         = "https://www.gnu.org/software/screen/"
-mode        = ["base"]
+package          = "community/screen"
+description      = "Full-screen window manager that multiplexes a physical terminal"
+url              = "https://www.gnu.org/software/screen/"
 
 [pkg.screenkey]
-package     = "community/screenkey"
-description = "A screencast tool to display your keys inspired by Screenflick"
-url         = "https://www.thregr.org/~wavexx/software/screenkey/"
-mode        = ["desktop", "hacker"]
+package          = "community/screenkey"
+description      = "A screencast tool to display your keys inspired by Screenflick"
+url              = "https://www.thregr.org/~wavexx/software/screenkey/"
 
 [pkg.sendmail]
-package     = "aur/sendmail"
-description = "A general purpose internetwork email routing MTA"
-url         = "http://www.sendmail.org"
-aur_url     = "https://aur.archlinux.org/packages/sendmail"
-mode        = ["testing"]
+package          = "aur/sendmail"
+description      = "A general purpose internetwork email routing MTA"
+url              = "http://www.sendmail.org"
+aur_url          = "https://aur.archlinux.org/packages/sendmail"
 
 [pkg.shellcheck]
-package     = "community/shellcheck"
-description = "Shell script analysis tool"
-url         = "https://www.shellcheck.net"
-mode        = ["ael-base"]
+package          = "community/shellcheck"
+description      = "Shell script analysis tool"
+url              = "https://www.shellcheck.net"
 
 [pkg.shutter]
-package     = "aur/shutter-git"
-description = "A featureful screenshot tool, git version"
-url         = "https://shutter-project.org/"
-aur_url     = "https://aur.archlinux.org/packages/shutter-git"
-mode        = ["testing"]
+package          = "aur/shutter-git"
+description      = "A featureful screenshot tool, git version"
+url              = "https://shutter-project.org/"
+aur_url          = "https://aur.archlinux.org/packages/shutter-git"
 
 [pkg.simple-mtpfs]
-package     = "aur/simple-mtpfs"
-description = "A FUSE filesystem that supports reading/writing from MTP devices"
-url         = "https://github.com/phatina/simple-mtpfs/"
-url_aur     = "https://aur.archlinux.org/packages/simple-mtpfs"
-mode        = ["ael-base"]
+package          = "aur/simple-mtpfs"
+description      = "A FUSE filesystem that supports reading/writing from MTP devices"
+url              = "https://github.com/phatina/simple-mtpfs/"
+url_aur          = "https://aur.archlinux.org/packages/simple-mtpfs"
 
 [pkg.smbclient]
-package     = "extra/smbclient"
-description = "Tools to access a server's filespace and printers via SMB"
-url         = "https://www.samba.org"
-mode        = ["hacker"]
+package          = "extra/smbclient"
+description      = "Tools to access a server's filespace and printers via SMB"
+url              = "https://www.samba.org"
 
 [pkg.snapd]
-package     = "aur/snapd"
-description = "Service and tools for management of snap packages."
-url         = "https://github.com/snapcore/snapd"
-aur_url     = "https://aur.archlinux.org/packages/snapd"
-mode        = ["testing"]
+package          = "aur/snapd"
+description      = "Service and tools for management of snap packages."
+url              = "https://github.com/snapcore/snapd"
+aur_url          = "https://aur.archlinux.org/packages/snapd"
 
 [pkg.socat]
-package     = "extra/socat"
-description = "Multipupose relay"
-url         = "http://www.dest-unreach.org/socat/"
-mode        = ["hacker"]
+package          = "extra/socat"
+description      = "Multipupose relay"
+url              = "http://www.dest-unreach.org/socat/"
+
+[pkg.speedtest]
+package          = "extra/speedtest-cli"
+description      = "Command line interface for testing internet bandwidth using speedtest.net."
+url              = "https://github.com/sivel/speedtest-cli"
 
 [pkg.sqlite]
-package     = "core/sqlite"
-description = "A C library that implements an SQL database engine"
-url         = "https://www.sqlite.org/"
-mode        = ["ael-base"]
+package          = "core/sqlite"
+description      = "A C library that implements an SQL database engine"
+url              = "https://www.sqlite.org/"
 
 [pkg.sqlitebrowser]
-package     = "community/sqlitebrowser"
-description = "SQLite Database browser is a light GUI editor for SQLite databases, built on top of Qt"
-url         = "https://sqlitebrowser.org/"
-mode        = ["desktop", "hacker"]
+package          = "community/sqlitebrowser"
+description      = "SQLite Database browser is a light GUI editor for SQLite databases, built on top of Qt"
+url              = "https://sqlitebrowser.org/"
 
 [pkg.sqlmap]
-package     = "community/sqlmap"
-description = "Automatic SQL injection and database takeover tool"
-url         = "http://sqlmap.org"
-note        = """
-              * TEST ON: Known Vulns @ https://tryhackme.com/room/owasptop10 [Task 29]
-              """
-mode        = ["hacker"]
+## (* notes *)
+## * TEST ON: Known Vulns @ https://tryhackme.com/room/owasptop10 [Task 29]
+package          = "community/sqlmap"
+description      = "Automatic SQL injection and database takeover tool"
+url              = "http://sqlmap.org"
 
 [pkg.sqsh]
-package     = "aur/sqsh"
-description = "Unix/Linux replacement for Sybase's isql"
-url         = "https://sourceforge.net/projects/sqsh/"
-aur_url     = "https://aur.archlinux.org/packages/sqsh"
-mode        = ["testing"]
+package          = "aur/sqsh"
+description      = "Unix/Linux replacement for Sybase's isql"
+url              = "https://sourceforge.net/projects/sqsh/"
+aur_url          = "https://aur.archlinux.org/packages/sqsh"
 
 [pkg.sxhkd]
-package     = "community/sxhkd"
-description = "Simple X hotkey daemon"
-url         = "https://github.com/baskerville/sxhkd"
-mode        = ["testing"]
+package          = "community/sxhkd"
+description      = "Simple X hotkey daemon"
+url              = "https://github.com/baskerville/sxhkd"
 
 [pkg.sxiv]
-package     = "community/sxiv"
-description = "Simple X Image Viewer"
-url         = "https://github.com/muennich/sxiv"
-mode        = ["desktop", "hacker"]
+package          = "community/sxiv"
+description      = "Simple X Image Viewer"
+url              = "https://github.com/muennich/sxiv"
+
+[pkg.system-config-printer]
+## (* provides *)
+## /usr/bin/
+## /usr/bin/install-printerdriver
+## /usr/bin/scp-dbus-service
+## /usr/bin/system-config-printer
+## /usr/bin/system-config-printer-applet
+package          = "extra/system-config-printer"
+description      = "A CUPS printer configuration tool and status applet."
+url              = "https://github.com/OpenPrinting/system-config-printer"
 
 [pkg.tcpdump]
-package     = "extra/tcpdump"
-description = "Powerful command-line packet analyzer."
-url         = "https://www.tcpdump.org/"
-man         = ["tcpdump(1)"]
-note        = """
-              #*ref.* [Daniel Miessler, "A tcpdump Tutorial with Examples — 50 Ways to Isolate Traffic"]( https://danielmiessler.com/study/tcpdump/)
-              """
-mode        = ["ael-base"]
+## (* notes *)
+## * [Daniel Miessler, "A tcpdump Tutorial with Examples — 50 Ways to Isolate Traffic"]( https://danielmiessler.com/study/tcpdump/)
+## (* info *)
+## tcpdump(1)
+package          = "extra/tcpdump"
+description      = "Powerful command-line packet analyzer."
+url              = "https://www.tcpdump.org/"
 
 [pkg.teams]
+package          = "aur/teams"
+description      = "Microsoft Teams for Linux is your chat-centered workspace in Office 365."
+category         = ["video conference"]
+url              = "https://teams.microsoft.com/downloads"
+url_aur          = "https://aur.archlinux.org/packages/teams"
 
 [pkg.tesseract]
-package     = "community/tesseract"
-description = "An OCR program"
-url         = "https://github.com/tesseract-ocr/tesseract"
-plugins     = ["community/tesseract-data-eng",
-               "community/tesseract-data-fra"]
-mode        = ["desktop", "hacker"]
+package          = "community/tesseract"
+description      = "An OCR program"
+category         = ["ocr"]
+url              = "https://github.com/tesseract-ocr/tesseract"
+
+[pkg.tesseract-data-eng]
+package          = "extra/tesseract-data-eng"
+description      = "Tesseract OCR data (eng)"
+category         = ["ocr"]
+url              = "https://github.com/tesseract-ocr/tessdata"
+
+[pkg.tesseract-data-fra]
+package          = "extra/tesseract-data-fra"
+description      = "Tesseract OCR data (fra)"
+category         = ["ocr"]
+url              = "https://github.com/tesseract-ocr/tessdata"
 
 [pkg.texinfo]
-package     = "core/texinfo"
-description = "GNU documentation system for on-line information and printed output"
-url         = "https://www.gnu.org/software/texinfo/"
-provides    = ["/usr/bin/info",
-               "/usr/bin/install-info",
-               "/usr/bin/makeinfo",
-               "/usr/bin/pdftexi2dvi",
-               "/usr/bin/pod2texi",
-               "/usr/bin/texi2any",
-               "/usr/bin/texi2dvi",
-               "/usr/bin/texi2pdf",
-               "/usr/bin/texindex"]
-mode        = ["ael-base"]
+## (* provides *)
+## /usr/bin/info
+## /usr/bin/install-info
+## /usr/bin/makeinfo
+## /usr/bin/pdftexi2dvi
+## /usr/bin/pod2texi
+## /usr/bin/texi2any
+## /usr/bin/texi2dvi
+## /usr/bin/texi2pdf
+## /usr/bin/texindex
+package          = "core/texinfo"
+description      = "GNU documentation system for on-line information and printed output"
+category         = ["info"]
+url              = "https://www.gnu.org/software/texinfo/"
 
 [pkg.thunar]
 package          = "extra/thunar"
 description      = "Modern file manager for Xfce"
+category         = ["file manager"]
 url              = "https://docs.xfce.org/xfce/thunar/start"
 
 [pkg.thunar-volman]
@@ -1273,16 +1273,14 @@ description      = "Automatic management of removable drives and media for Thuna
 url              = "https://docs.xfce.org/xfce/thunar/thunar-volman"
 
 [pkg.tidy]
-package     = "extra/tidy"
-description = "A tool to tidy down your HTML code to a clean style"
-url         = "https://www.html-tidy.org/"
-mode        = ["hacker"]
+package          = "extra/tidy"
+description      = "A tool to tidy down your HTML code to a clean style"
+url              = "https://www.html-tidy.org/"
 
 [pkg.tk]
-package     = "extra/tk"
-description = "A windowing toolkit for use with tcl"
-url         = "http://tcl.sourceforge.net/"
-mode        = ["desktop", "hacker"]
+package          = "extra/tk"
+description      = "A windowing toolkit for use with tcl"
+url              = "http://tcl.sourceforge.net/"
 
 [pkg.tmux]
 package          = "community/tmux"
@@ -1290,83 +1288,79 @@ description      = "A terminal multiplexer"
 url              = "https://github.com/tmux/tmux/wiki"
 
 [pkg.tor-browser]
-package     = "aur/tor-browser"
-description = "Tor Browser Bundle: anonymous browsing using Firefox and Tor (international PKGBUILD)."
-url         = "https://www.torproject.org/projects/torbrowser.html"
-notes       = """
-              * Check what is the effect of i3wm on the browser size.
-              """
-mode        = ["hacker"]
+package          = "aur/tor-browser"
+description      = "Tor Browser Bundle: anonymous browsing using Firefox and Tor (international PKGBUILD)."
+category         = ["web browser"]
+url              = "https://www.torproject.org/projects/torbrowser.html"
 
 [pkg.traceroute]
-package     = "core/traceroute"
-description = "Tracks the route taken by packets over an IP network"
-url         = "http://traceroute.sourceforge.net/"
-man         = ["traceroute(8)"]
-mode        = ["ael-base"]
+## (* info *)
+## traceroute(8)
+package          = "core/traceroute"
+description      = "Tracks the route taken by packets over an IP network"
+url              = "http://traceroute.sourceforge.net/"
 
 [pkg.transmission]
-package     = "extra/transmission-gtk"
-description = "Fast, easy, and free BitTorrent client (GTK+ GUI)"
-url         = "http://www.transmissionbt.com/"
-mode        = ["desktop", "hacker"]
+package          = "extra/transmission-gtk"
+description      = "Fast, easy, and free BitTorrent client (GTK+ GUI)"
+url              = "http://www.transmissionbt.com/"
 
 [pkg.tree]
-package     = "extra/tree"
-description = "A directory listing program displaying a depth indented list of files"
-url         = "https://gitlab.com/OldManProgrammer/unix-tree"
-man         = ["tree(1)"]
-mode        = ["ael-base"]
+package          = "extra/tree"
+description      = "A directory listing program displaying a depth indented list of files"
+url              = "https://gitlab.com/OldManProgrammer/unix-tree"
 
 [pkg.ttf-font-awesome-4]
-package     = "aur/ttf-font-awesome-4"
-description = "100% free version of font awesome."
-url         = "http://fontawesome.io/"
-url_aur     = "https://aur.archlinux.org/packages/ttf-font-awesome-4"
-mode        = ["ael-base"]
+package          = "aur/ttf-font-awesome-4"
+description      = "100% free version of font awesome."
+category         = ["font"]
+url              = "http://fontawesome.io/"
+url_aur          = "https://aur.archlinux.org/packages/ttf-font-awesome-4"
 
 [pkg.ttf-symbola]
-package     = "aur/ttf-symbola"
-description = "Font for symbol blocks of the Unicode Standard (TTF)"
-url         = "https://dn-works.com/ufas/"
-url_aur     = "https://aur.archlinux.org/packages/font-symbola"
-mode        = ["ael-base"]
+package          = "aur/ttf-symbola"
+description      = "Font for symbol blocks of the Unicode Standard (TTF)"
+category         = ["font"]
+url              = "https://dn-works.com/ufas/"
+url_aur          = "https://aur.archlinux.org/packages/font-symbola"
 
 [pkg.ufw]
-package     = "community/ufw"
-description = "Uncomplicated and easy to use CLI tool for managing a netfilter firewall"
-url         = "https://launchpad.net/ufw"
-mode        = ["ael-base"]
+package          = "community/ufw"
+description      = "Uncomplicated and easy to use CLI tool for managing a netfilter firewall"
+url              = "https://launchpad.net/ufw"
 
 [pkg.ugrep]
-package     = "community/ugrep"
-description = "ultra fast grep with interactive TUI, fuzzy search, boolean queries, hexdumps and more"
-url         = "https://github.com/Genivia/ugrep"
-mode        = ["testing"]
+package          = "community/ugrep"
+description      = "ultra fast grep with interactive TUI, fuzzy search, boolean queries, hexdumps and more"
+url              = "https://github.com/Genivia/ugrep"
 
 [pkg.unrar]
-package     = "extra/unrar"
-description = "The RAR uncompression program"
-url         = "https://www.rarlab.com/rar_add.htm"
-mode        = ["ael-base"]
+package          = "extra/unrar"
+description      = "The RAR uncompression program"
+category         = ["compression"]
+url              = "https://www.rarlab.com/rar_add.htm"
 
 [pkg.unzip]
-package     = "extra/unzip"
-description = "For extracting and viewing files in .zip archives."
-url         = "http://infozip.sourceforge.net/UnZip.html"
-mode        = ["ael-base"]
+package          = "extra/unzip"
+description      = "For extracting and viewing files in .zip archives."
+category         = ["compression"]
+url              = "http://infozip.sourceforge.net/UnZip.html"
 
 [pkg.usbutils]
-package     = "core/usbutils"
-description = "A collection of USB tools to query connected USB devices"
-url         = "https://git.kernel.org/pub/scm/linux/kernel/git/gregkh/usbutils.git/"
-mode        = ["ael-base"]
+## (* provides *)
+## /usr/bin/lsusb
+## /usr/bin/lsusb.py
+## /usr/bin/usb-devices
+## /usr/bin/usbhid-dump
+## /usr/bin/usbreset
+package          = "core/usbutils"
+description      = "A collection of USB tools to query connected USB devices"
+url              = "https://git.kernel.org/pub/scm/linux/kernel/git/gregkh/usbutils.git/"
 
 [pkg.vim]
-package     = "extra/vim"
-description = "Vi Improved, a highly configurable, improved version of the vi text editor"
-url         = "https://www.vim.org"
-mode        = ["ael-base"]
+package          = "extra/vim"
+description      = "Vi Improved, a highly configurable, improved version of the vi text editor"
+url              = "https://www.vim.org"
 
 [pkg.virtualbox]
 package          = "community/virtualbox"
@@ -1389,35 +1383,32 @@ description      = "Multi-platform MPEG, VCD/DVD, and DivX player"
 url              = "https://www.videolan.org/vlc/"
 
 [pkg.w3m]
-package     = "extra/w3m"
-description = "Text-based Web browser as well as pager"
-url         = "https://salsa.debian.org/debian/w3m"
-mode        = ["ael-base"]
+package          = "extra/w3m"
+description      = "Text-based Web browser as well as pager"
+category         = ["web browser"]
+url              = "https://salsa.debian.org/debian/w3m"
 
 [pkg.wfuzz]
-package     = "aur/wfuzz-git"
-description = "Web application fuzzer - python3 build of the dev branch"
-url         = "https://github.com/xmendez/wfuzz"
-url_aur     = "https://aur.archlinux.org/packages/wfuzz-git"
-mode        = ["hacker"]
+package          = "aur/wfuzz-git"
+description      = "Web application fuzzer - python3 build of the dev branch"
+category         = ["hacker"]
+url              = "https://github.com/xmendez/wfuzz"
+url_aur          = "https://aur.archlinux.org/packages/wfuzz-git"
 
 [pkg.wget]
-package     = "extra/wget"
-description = "Network utility to retrieve files from the Web"
-url         = "https://www.gnu.org/software/wget/wget.html"
-mode        = ["ael-base"]
+package          = "extra/wget"
+description      = "Network utility to retrieve files from the Web"
+url              = "https://www.gnu.org/software/wget/wget.html"
 
 [pkg.whois]
-package     = "extra/whois"
-description = "Intelligent WHOIS client"
-url         = "https://github.com/rfc1036/whois"
-mode        = ["ael-base"]
+package          = "extra/whois"
+description      = "Intelligent WHOIS client"
+url              = "https://github.com/rfc1036/whois"
 
 [pkg.wireless_tools]
-package     = "extra/wireless_tools"
-description = "Tools allowing to manipulate the Wireless Extensions"
-url         = "https://hewlettpackard.github.io/wireless-tools/Tools.html"
-mode        = ["testing"]
+package          = "extra/wireless_tools"
+description      = "Tools allowing to manipulate the Wireless Extensions"
+url              = "https://hewlettpackard.github.io/wireless-tools/Tools.html"
 
 [pkg.wireshark]
 package          = "community/wireshark-qt"
@@ -1445,10 +1436,9 @@ description      = "Network traffic and protocol analyzer/sniffer - CLI tools an
 url              = "https://www.wireshark.org/"
 
 [pkg.xautomation]
-package     = "community/xautomation"
-description = "Controls X from the command line and does 'visual scraping'."
-url         = "https://hoopajoo.net/projects/xautomation.html"
-mode        = ["testing"]
+package          = "community/xautomation"
+description      = "Controls X from the command line and does 'visual scraping'."
+url              = "https://hoopajoo.net/projects/xautomation.html"
 
 [pkg.xclip]
 package          = "extra/xclip"
@@ -1456,154 +1446,135 @@ description      = "Command line interface to the X11 clipboard"
 url              = "https://github.com/astrand/xclip"
 
 [pkg.xcompmgr]
-package     = "extra/xcompmgr"
-description = "Composite Window-effects manager for X.org"
-url         = "https://xorg.freedesktop.org/"
-mode        = ["desktop", "hacker"]
+package          = "extra/xcompmgr"
+description      = "Composite Window-effects manager for X.org"
+url              = "https://xorg.freedesktop.org/"
 
 [pkg.xdg-ninja]
-package     = "aur/xdg-ninja-git"
-description = "A shell script which checks your $HOME for unwanted files and directories."
-url         = "https://github.com/b3nj5m1n/xdg-ninja"
-aur_url     = "https://aur.archlinux.org/packages/xdg-ninja-git"
-mode        = ["ael-base"]
+package          = "aur/xdg-ninja-git"
+description      = "A shell script which checks your $HOME for unwanted files and directories."
+url              = "https://github.com/b3nj5m1n/xdg-ninja"
+aur_url          = "https://aur.archlinux.org/packages/xdg-ninja-git"
 
 [pkg.xdg-user-dirs]
-package     = "extra/xdg-user-dirs"
-description = "Manage user directories like ~/Desktop and ~/Music"
-url         = "https://www.freedesktop.org/wiki/Software/xdg-user-dirs"
-mode        = ["testing"]
+package          = "extra/xdg-user-dirs"
+description      = "Manage user directories like ~/Desktop and ~/Music"
+url              = "https://www.freedesktop.org/wiki/Software/xdg-user-dirs"
 
 [pkg.xdotool]
-package     = "community/xdotool"
-description = "Command-line X11 automation tool"
-url         = "https://www.semicomplete.com/projects/xdotool/"
-man         = ["xdotool(1)"]
-mode        = ["desktop", "hacker"]
+package          = "community/xdotool"
+description      = "Command-line X11 automation tool"
+url              = "https://www.semicomplete.com/projects/xdotool/"
 
 [pkg.xfce4-terminal]
-package     = "extra/xfce4-terminal"
-description = "A modern terminal emulator primarily for the Xfce desktop environment"
-url         = "https://docs.xfce.org/apps/terminal/start"
-man         = ["xfce4-terminal(1)"]
-mode        = ["desktop", "hacker"]
+package          = "extra/xfce4-terminal"
+description      = "A modern terminal emulator primarily for the Xfce desktop environment"
+url              = "https://docs.xfce.org/apps/terminal/start"
 
 [pkg.xorg-server]
-package     = "extra=/xorg-server"
-description = "Xorg X server"
-url         = "https://xorg.freedesktop.org"
-mode        = ["desktop", "hacker"]
+package          = "extra=/xorg-server"
+description      = "Xorg X server"
+url              = "https://xorg.freedesktop.org"
 
 [pkg.xorg-server-xephyr]
-package     = "extra/xorg-server-xephyr"
-description = "A nested X server that runs as an X application"
-url         = "https://xorg.freedesktop.org"
-provides    = ["Xephyr"]
-man         = ["Xephyr(1)"]
-mode        = ["desktop", "hacker"]
+package          = "extra/xorg-server-xephyr"
+description      = "A nested X server that runs as an X application"
+url              = "https://xorg.freedesktop.org"
 
 [pkg.xorg-setxkbmap]
-package     = "extra/xorg-setxkbmap"
-description = "Set the keyboard using the X Keyboard Extension"
-url         = "https://xorg.freedesktop.org/"
-mode        = ["desktop"]
+package          = "extra/xorg-setxkbmap"
+description      = "Set the keyboard using the X Keyboard Extension"
+url              = "https://xorg.freedesktop.org/"
 
 [pkg.xorg-xev]
-group       = "xorg-apps"
-package     = "extra/xorg-xev"
-description = "Print contents of X events"
-url         = "https://xorg.freedesktop.org/"
-provide     = "xev"
-mode        = ["desktop", "hacker"]
+## (* provides *)
+## /usr/bin/xev
+group            = "xorg-apps"
+package          = "extra/xorg-xev"
+description      = "Print contents of X events"
+url              = "https://xorg.freedesktop.org/"
 
 [pkg.xorg-xhost]
-group       = "xorg-apps"
-package     = "extra/xorg-xhost"
-description = "Server access control program for X"
-url         = "https://xorg.freedesktop.org/"
-provides    = ["xhost"]
-man         = ["xhost(1)"]
-mode        = ["desktop", "hacker"]
-note        = """
-              * xhost is used to access GUI apps in docker containers.
-              """
+## (* provides *)
+## /usr/bin/xhost
+## (* notes *)
+## * xhost is used to access GUI apps in docker containers.
+group            = "xorg-apps"
+package          = "extra/xorg-xhost"
+description      = "Server access control program for X"
+url              = "https://xorg.freedesktop.org/"
 
 [pkg.xorg-xinit]
-package     = "extra/xorg-xinit"
-description = "X.Org initialisation program"
-url         = "https://xorg.freedesktop.org/"
-provides    = ["/usr/bin/startx",
-               "/usr/bin/xinit"]
-man         = ["startx(1)", "xinit(1)"]
-mode        = ["desktop", "hacker"]
+## (* provides *)
+## /usr/bin/startx
+## /usr/bin/xinit
+package          = "extra/xorg-xinit"
+description      = "X.Org initialisation program"
+url              = "https://xorg.freedesktop.org/"
 
 [pkg.xorg-xrandr]
-group       = "xorg-apps"
-package     = "extra/xorg-xrandr"
-description = "Primitive command line interface to RandR extension"
-url         = "https://xorg.freedesktop.org/"
-provides    = ["/usr/bin/xrandr"]
-man         = ["xrandr(1)"]
-mode        = ["desktop", "hacker"]
+## (* provides *)
+## /usr/bin/xrandr
+group            = "xorg-apps"
+package          = "extra/xorg-xrandr"
+description      = "Primitive command line interface to RandR extension"
+url              = "https://xorg.freedesktop.org/"
 
 [pkg.xterm]
-package     = "extra/xterm"
-description = "X Terminal Emulator"
-url         = "https://invisible-island.net/xterm/"
-mode        = ["desktop", "hacker"]
+package          = "extra/xterm"
+description      = "X Terminal Emulator"
+url              = "https://invisible-island.net/xterm/"
 
 [pkg.youtube-dl]
-package     = "community/youtube-dl"
-description = "A command-line program to download videos from YouTube.com and a few more sites"
-url         = "https://ytdl-org.github.io/youtube-dl/"
-mode        = ["desktop", "hacker"]
+package          = "community/youtube-dl"
+description      = "A command-line program to download videos from YouTube.com and a few more sites"
+url              = "https://ytdl-org.github.io/youtube-dl/"
+
+[pkg.yt-dlp]
+package          = "extra/yt-dlp"
+description      = "A youtube-dl fork with additional features and fixes."
+url              = "https://github.com/yt-dlp/yt-dlp"
 
 [pkg.zaproxy]
-package     = "community/zaproxy"
-description = "Integrated penetration testing tool for finding vulnerabilities in web applications."
-url         = "https://www.owasp.org/index.php/ZAP"
-git         = "https://github.com/zaproxy"
-mode        = ["hacker"]
+package          = "community/zaproxy"
+description      = "Integrated penetration testing tool for finding vulnerabilities in web applications."
+category         = ["hacker"]
+url              = "https://www.owasp.org/index.php/ZAP"
+git              = "https://github.com/zaproxy"
 
 [pkg.zathura]
-package     = "community/zathura"
-description = "Minimalistic document viewer"
-url         = "https://pwmt.org/projects/zathura/"
-mode        = ["desktop", "hacker"]
+package          = "community/zathura"
+description      = "Minimalistic document viewer"
+url              = "https://pwmt.org/projects/zathura/"
 
 [pkg.zathura-pdf-mupdf]
-package     = "community/zathura-pdf-mupdf"
-description = "PDF support for Zathura (MuPDF backend) (Supports PDF, ePub, and OpenXPS)"
-url         = "https://pwmt.org/projects/zathura-pdf-mupdf/"
-mode        = ["desktop", "hacker"]
+package          = "community/zathura-pdf-mupdf"
+description      = "PDF support for Zathura (MuPDF backend) (Supports PDF, ePub, and OpenXPS)"
+url              = "https://pwmt.org/projects/zathura-pdf-mupdf/"
 
 [pkg.zbar]
-package     = "extra/zbar"
-description = "Application and library for reading bar codes from various sources"
-url         = "https://github.com/mchehab/zbar"
-provides    = ["/usr/bin/zbarcam",
-               "/usr/bin/zbarcam-gtk",
-               "/usr/bin/zbarcam-qt",
-               "/usr/bin/zbarimg"]
-mode        = ["desktop", "hacker"]
+## (* provides *)
+## /usr/bin/zbarcam
+## /usr/bin/zbarcam-gtk
+## /usr/bin/zbarcam-qt
+## /usr/bin/zbarimg
+package          = "extra/zbar"
+description      = "Application and library for reading bar codes from various sources"
+url              = "https://github.com/mchehab/zbar"
 
 [pkg.zoom]
 
 ### Still considering...
 # android-file-transfer
-# arandr
 # canon-pixma-g6000-conplete
 # captdriver-git
-# domination
 # dropbox
 # foomatic-db-gutenprint-ppds
 # gnome-characters
-# gucharmap
 # gutenprint
-# gvfs
-# htmlq-git
 # libvncserver
 # libxcrypt-compat
+# [libtool]
 # lshw
 # luit
 # lxc
@@ -1615,6 +1586,8 @@ mode        = ["desktop", "hacker"]
 # pdftk
 # qpdfview
 # rtl88x2bu-dkms-git
+# sane-airscan -> scanner?
+# [sddm]
 # system-config-printer
 # ttf-google-fonts-git
 # ttf-hack
