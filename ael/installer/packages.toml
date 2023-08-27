@@ -2,7 +2,7 @@
 ## [packages.toml]
 ## author        = "fantomH @alterEGO Linux"
 ## created       = 2023-08-09 02:19:15 UTC
-## updated       = 2023-08-17 12:23:12 UTC
+## updated       = 2023-08-21 11:11:36 UTC
 ## description   = "alterEGO Linux packages."
 
 [pkg.alacritty]
@@ -563,6 +563,12 @@ package          = "extra/inkscape"
 description      = "Professional vector graphics editor"
 url              = "https://inkscape.org/"
 
+[pkg.insomnia]
+package          = "aur/insomnia-bin"
+description      = "API Client and Design Platform for GraphQL and REST."
+url              = "https://insomnia.rest"
+url_aur          = "https://aur.archlinux.org/packages/insomnia-bin"
+
 [pkg.inxi]
 package          = "aur/inxi-git"
 description      = "Full featured CLI system information tool"
@@ -909,6 +915,12 @@ url              = "https://github.com/christophgysin/pasystray"
 package          = "extra/pavucontrol"
 description      = "PulseAudio Volume Control"
 url              = "https://freedesktop.org/software/pulseaudio/pavucontrol/"
+
+[pkg.pcmanfm]
+package          = "extra/pcmanfm-gtk3"
+description      = "Extremely fast and lightweight file manager (GTK+ 3 version)"
+category         = "file manager"
+url              = "https://lxde.org/"
 
 [pkg.perl-image-exiftool]
 package          = "extra/perl-image-exiftool"
